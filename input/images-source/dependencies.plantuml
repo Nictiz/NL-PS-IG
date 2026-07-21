@@ -1,0 +1,32 @@
+@startuml
+' Use PlantUML's built-in layout engine (no Graphviz/dot dependency in the IG Publisher build)
+!pragma layout smetana
+skinparam componentStyle rectangle
+skinparam shadowing false
+skinparam defaultTextAlignment center
+
+package "Specification (what is exchanged)" {
+  [Functioneel ontwerp\nAcute Zorg V2.2.0] as FO
+  [ART-DECOR data set + transaction\nV1.0.0-alpha.2 (hg- project)] as AD
+  [Zib publication 2020] as ZIB
+}
+
+package "FHIR packages (how it is built)" {
+  [zib2020] as ZIB2020
+  [nl-core] as NLCORE
+  [hl7.fhir.uv.tools.r4] as TOOLS
+}
+
+[This IG\nnictiz.fhir.nl.r4.acutezorg] as AZ
+[nictiz.fhir.nl.r4.elz\n(primary care)] as ELZ
+
+FO --> AD
+ZIB --> AD
+ZIB --> ZIB2020
+ZIB2020 --> NLCORE
+NLCORE --> AZ
+TOOLS --> AZ
+AD ..> AZ : implemented by
+AD ..> ELZ : primary care transactions
+ELZ ..> AZ : intended dependency\n(shared generic hg-Referral* profiles)
+@enduml

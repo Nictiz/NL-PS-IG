@@ -1,0 +1,29 @@
+== Suppressed Messages ==
+
+# Add warning and/or information messages here after you've confirmed that they aren't really a problem
+# (And include comments like this justifying why)
+# See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
+
+# Broken links into the nl-core dependency (nictiz.fhir.nl.r4.nl-core 0.12.0-beta.4).
+# The loaded beta package declares no published web location (canonical/url are null in its
+# package.json), so the IG Publisher cannot form links to its pages. These links originate from
+# nl-core's own internal cross-references, inherited into the snapshots of profiles we derive
+# from nl-core; they are not defects in this IG and will resolve once nl-core ships a release
+# that carries web metadata. Matched as case-insensitive substrings (%...%). Both the bare
+# nl-core-HealthcareProvider (Location) and nl-core-HealthcareProvider-Organization are suppressed:
+# the latter is linked from the PartyReferenceComment guidance and from derived profile snapshots.
+%'http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-Practitioner'%
+%'http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthProfessional-PractitionerRole'%
+%'http://nictiz.nl/fhir/StructureDefinition/nl-core-ContactPerson'%
+%'http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider'%
+%'http://nictiz.nl/fhir/StructureDefinition/nl-core-HealthcareProvider-Organization'%
+%'http://nictiz.nl/fhir/ConceptMap/AdresSoortCodelijst-to-AddressUse'%
+%'http://nictiz.nl/fhir/ConceptMap/AdresSoortCodelijst-to-AddressType'%
+%'http://nictiz.nl/fhir/StructureDefintion/nl-core-ContactPerson'%
+
+# Expected consequence of the open-world reference modeling (see Design Decisions): references
+# list the base resource type alongside a profile of it, so a profiled example instance also
+# satisfies the base-type option and the validator reports it matching more than one choice.
+# This is intentional (it lets a sender submit either a bare core resource or a profiled one)
+# and is a warning, not a defect. Matched as a case-insensitive substring.
+Reference_REF_MultipleMatches
