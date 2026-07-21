@@ -1,0 +1,98 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="2.16.840.1.113883.2.4.3.11.60.103.11.31--20250820144948"/>
+    <meta>
+        <lastUpdated value="2025-08-20T14:49:48Z"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+        <tag>
+            <system value="http://hl7.org/fhir/FHIR-version"/>
+            <code value="4.0.1"/>
+        </tag>
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2025-08-20T14:49:48Z"/>
+        </valuePeriod>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/web-source">
+        <valueUrl value="http://decor.nictiz.nl/decor/services/RetrieveValueSet?prefix=hg-&amp;version=&amp;id=2.16.840.1.113883.2.4.3.11.60.103.11.31&amp;effectiveDate=2025-08-20T14:49:48"/>
+    </extension>
+    <url value="http://decor.nictiz.nl/fhir/ValueSet/2.16.840.1.113883.2.4.3.11.60.103.11.31--20250820144948"/>
+    <identifier>
+        <use value="official"/>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:oid:2.16.840.1.113883.2.4.3.11.60.103.11.31"/>
+    </identifier>
+    <version value="2025-08-20T14:49:48"/>
+    <name value="Bijlagen"/>
+    <title value="Bijlagen"/>
+    <status value="draft"/>
+    <experimental value="false"/>
+    <date value="2025-08-20T14:49:48Z"/>
+    <publisher value="Nictiz"/>
+    <contact>
+        <name value="Nictiz"/>
+        <telecom>
+            <system value="url"/>
+            <value value="https://www.nictiz.nl"/>
+        </telecom>
+    </contact>
+    <description value="Bijlagen"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.55.5.16"/>
+            <concept>
+                <code value="001"/>
+                <display value="12 afleidingen ECG"/>
+            </concept>
+            <concept>
+                <code value="002"/>
+                <display value="ritmestrook"/>
+            </concept>
+            <concept>
+                <code value="003"/>
+                <display value="advies patient"/>
+            </concept>
+            <concept>
+                <code value="004"/>
+                <display value="cardiologisch begeleidingsformulier"/>
+            </concept>
+            <concept>
+                <code value="005"/>
+                <display value="IBS/CM"/>
+            </concept>
+            <concept>
+                <code value="006"/>
+                <display value="intern rapport/overdracht"/>
+            </concept>
+            <concept>
+                <code value="007"/>
+                <display value="niet reanimeren verklaring"/>
+            </concept>
+            <concept>
+                <code value="008"/>
+                <display value="patient weigert hulp"/>
+            </concept>
+            <concept>
+                <code value="009"/>
+                <display value="RM/ZM"/>
+            </concept>
+            <concept>
+                <code value="010"/>
+                <display value="eerste hulp, geen vervoer"/>
+            </concept>
+            <concept>
+                <code value="011"/>
+                <display value="foto"/>
+            </concept>
+            <concept>
+                <code value="012"/>
+                <display value="video"/>
+            </concept>
+            <concept>
+                <code value="013"/>
+                <display value="prehospitale EEG"/>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

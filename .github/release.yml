@@ -1,0 +1,25 @@
+# Configuration for GitHub's automatically generated release notes.
+# On a new Release, "Generate release notes" groups merged PRs into these
+# categories by their labels. Label PRs accordingly so each release's notes
+# map onto the Nationaal Releasebeleid semantic-versioning buckets
+# (breaking -> major, enhancement -> minor, fix -> patch).
+changelog:
+  exclude:
+    labels:
+      - ignore-for-release
+  categories:
+    - title: Breaking changes
+      labels:
+        - breaking-change
+    - title: Added
+      labels:
+        - enhancement
+    - title: Fixed
+      labels:
+        - fix
+    - title: Documentation
+      labels:
+        - documentation
+    - title: Other changes
+      labels:
+        - "*"
