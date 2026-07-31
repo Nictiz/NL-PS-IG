@@ -6,8 +6,8 @@
 id: nictiz.nl.patientsummary
 canonical: http://nictiz.nl/patientsummary
 name: NLPatientSummary
-# title: Example Title
-# description: Example Implementation Guide for getting started with SUSHI
+title: NL Patient Summary
+description: FHIR R4 Implementation Guide for information exchange in patient summary.
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
