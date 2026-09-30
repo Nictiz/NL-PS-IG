@@ -298,7 +298,7 @@
         <targetProfile value="http://nictiz.nl/gbb/StructureDefinition/nl-core-PractitionerRole" />
         <targetProfile value="http://nictiz.nl/gbb/StructureDefinition/nl-core-Patient" />
         <targetProfile value="http://nictiz.nl/gbb/StructureDefinition/nl-core-Organization" />
-        <targetProfile value="http://nictiz.nl/gbb/StructureDefinition/nl-core-RelatedPerson" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
       </type>
       <mustSupport value="true" />
       <mapping>
