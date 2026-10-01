@@ -1,5 +1,5 @@
 id: nictiz.nl.nlps
-canonical: http://nictiz.nl/nlps
+canonical: http://ig.nictiz.nl/nlps
 name: PatientSummary
 title: "Patient Summary"
 status: draft
@@ -58,3 +58,4 @@ instanceOptions:
   
 dependencies:
   hl7.fhir.uv.xver-r5.r4: 0.1.0
+  nictiz.nl.gbb: current$_generated_NICTIZ-43876
