@@ -68,7 +68,7 @@ class TargetFolders {
 }
 
 class ActorDefinitionDownloader {
-  static actorDefinitionsUrl = "https://decor.nictiz.nl/fhir/4.0/nl-ps-/ActorDefinition?publisher=nl-ps-&_format=json";
+  static actorDefinitionsUrl = "https://decor.nictiz.nl/fhir/4.0/nlps-/ActorDefinition?publisher=nlps-&_format=json";
 
   constructor(outputFolder) {
     this.outputFolder = outputFolder;
