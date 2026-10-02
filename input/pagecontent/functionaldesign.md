@@ -10,10 +10,10 @@ Hier in dit document, beschrijven we de informatiestandaard Nederlandse Patients
 
 Voor de verklaring van de begrippen die voorkomen in het functioneel ontwerp wordt verwezen naar het [begrippenoverzicht op de Nictiz website](https://www.nictiz.nl/standaarden/begrippen/).
 
-![Situatie 1](../../content/assets/situatie_1.jpg)
-![Situatie 2](../../content/assets/situatie_2.jpg)
-![Situatie 3](../../content/assets/situatie_3.jpg)
-![Situatie 4](../../content/assets/situatie_4.jpg)
+![Situatie 1](situatie_1.jpg)
+![Situatie 2](situatie_2.jpg)
+![Situatie 3](situatie_3.jpg)
+![Situatie 4](situatie_4.jpg)
 
 ## Doelgroep
 
