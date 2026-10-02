@@ -10,6 +10,11 @@ Hier in dit document, beschrijven we de informatiestandaard Nederlandse Patients
 
 *Voor de verklaring van de begrippen die voorkomen in het functioneel ontwerp wordt verwezen naar het *[*begrippenoverzicht op de Nictiz website*](https://www.nictiz.nl/standaarden/begrippen/)*.*
 
+![Alt text](content/assets/situatie_1.jpg)
+![Alt text](content/assets/situatie_2.jpg)
+![Alt text](content/assets/situatie_3.jpg)
+![Alt text](content/assets/situatie_4.jpg)
+
 ## Doelgroep
 
 Dit functioneel ontwerp is bedoeld voor partijen die betrokken zijn bij de ontwikkeling, implementatie, beproeving, en het beheer van de NL-PS. De primaire doelgroep bestaat uit:
