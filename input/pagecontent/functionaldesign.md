@@ -10,10 +10,10 @@ Hier in dit document, beschrijven we de informatiestandaard Nederlandse Patients
 
 Voor de verklaring van de begrippen die voorkomen in het functioneel ontwerp wordt verwezen naar het [begrippenoverzicht op de Nictiz website](https://www.nictiz.nl/standaarden/begrippen/).
 
-![Alt text](content/assets/situatie_1.jpg)
-![Alt text](content/assets/situatie_2.jpg)
-![Alt text](content/assets/situatie_3.jpg)
-![Alt text](content/assets/situatie_4.jpg)
+![Situatie 1](../../content/assets/situatie_1.jpg)
+![Situatie 2](../../content/assets/situatie_2.jpg)
+![Situatie 3](../../content/assets/situatie_3.jpg)
+![Situatie 4](../../content/assets/situatie_4.jpg)
 
 ## Doelgroep
 
@@ -180,7 +180,7 @@ EHR systemen moeten een NL-PS kunnen opstellen aan de hand van de in de transact
 |  |  |  |  |
 | --- | --- | --- | --- |
 | ​**​Transactie** | **​Systeemrol** | **​Systeem** | ​​**Bedrijfsrol** |
-| Beschikbaarstellen Patient Summary \<link naar LIM\> | ​NPS-PSB-FHIR | EHR Beschikbaarstellende zorgaanbieder | PS Producer |
+| Beschikbaarstellen Patient Summary | ​NPS-PSB-FHIR | EHR Beschikbaarstellende zorgaanbieder | PS Producer |
 
 ## Ontvangen van de PS
 
