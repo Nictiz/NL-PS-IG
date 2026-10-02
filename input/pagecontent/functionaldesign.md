@@ -8,7 +8,7 @@ De European Patient Summary (EPS) is een gestandaardiseerde samenvatting van min
 
 Hier in dit document, beschrijven we de informatiestandaard Nederlandse Patientsamenvatting (NL-PS) met in de basis deze EPS en EEHRxF. De NL-PS voegt daarbij toe aan de EPS de mogelijkheidheden voor een set van essentiële informatiebehoeften binnen de Nederlandse context. Het vertaalt de Europese kaders naar functionele eisen die aansluiten en ondersteuning geven bij de Nederlandse zorgprocessen, informatiesystemen en gegevensuitwisseling.
 
-*Voor de verklaring van de begrippen die voorkomen in het functioneel ontwerp wordt verwezen naar het *[*begrippenoverzicht op de Nictiz website*](https://www.nictiz.nl/standaarden/begrippen/)*.*
+Voor de verklaring van de begrippen die voorkomen in het functioneel ontwerp wordt verwezen naar het [begrippenoverzicht op de Nictiz website](https://www.nictiz.nl/standaarden/begrippen/).
 
 ![Alt text](content/assets/situatie_1.jpg)
 ![Alt text](content/assets/situatie_2.jpg)
