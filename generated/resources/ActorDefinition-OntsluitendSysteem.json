@@ -1,0 +1,73 @@
+{
+  "resourceType": "ActorDefinition",
+  "id": "NlPsExchangingSystem",
+  "language": "nl",
+  "url": "http://ig.nictiz.nl/nl-ps/ActorDefinition/NlPsExchangingSystem",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.2.4.3.11.60.149.7.2"
+    }
+  ],
+  "name": "OntsluitendSysteem",
+  "_name": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en"
+          },
+          {
+            "url": "content",
+            "valueString": "ExchangingSystem"
+          }
+        ]
+      }
+    ]
+  },
+  "title": "OntsluitendSysteem",
+  "_title": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en"
+          },
+          {
+            "url": "content",
+            "valueMarkdown": "ExchangingSystem"
+          }
+        ]
+      }
+    ]
+  },
+  "status": "unknown",
+  "publisher": "Nictiz",
+  "description": "Systeem dat gegevens ontsluit aan derden",
+  "_description": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en"
+          },
+          {
+            "url": "content",
+            "valueMarkdown": "System that discloses data to third parties"
+          }
+        ]
+      }
+    ]
+  },
+  "type": "system",
+  "derivedFrom": [
+    "http://ig.nictiz.nl/gbb/ActorDefinition/ExchangingSystem"
+  ]
+}
