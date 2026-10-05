@@ -102,6 +102,11 @@
       <alias value="Versie" />
       <mustSupport value="true" />
       <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="011" />
+        <comment value="Version" />
+      </mapping>
+      <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-36" />
         <comment value="Version" />
@@ -228,6 +233,11 @@
       <definition value="Additional details about where the content was created (e.g. clinical specialty)." />
       <alias value="ZorgSpecialisme" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="021" />
+        <comment value="ServiceSpecialty" />
+      </mapping>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-50" />
@@ -412,6 +422,11 @@
       <definition value="Document legal authentication details." />
       <alias value="JuridischeAuthenticatie" />
       <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="017" />
+        <comment value="legalAuthenticator" />
+      </mapping>
+      <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-43" />
         <comment value="legalAuthentication" />
@@ -438,6 +453,11 @@
       <definition value="Indicates the level of authority of the attestation. The type of attestation the authenticator offers." />
       <patternCode value="legal" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="19" />
+        <comment value="mode of legal authentication" />
+      </mapping>
     </element>
     <element id="Composition.attester:legalAuthenticator.time">
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -462,6 +482,11 @@
       <alias value="DatumTijd" />
       <min value="1" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="018" />
+        <comment value="dateTime of legal authentication" />
+      </mapping>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-48" />
@@ -648,6 +673,11 @@
       </type>
       <mustSupport value="true" />
       <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="022" />
+        <comment value="custodian" />
+      </mapping>
+      <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-52" />
         <comment value="Organization" />
@@ -675,6 +705,11 @@
       <definition value="Categorisation of the event covered by the document (e.g. laboratory study types, imaging study types including modality, etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes." />
       <alias value="EvenementType" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="020" />
+        <comment value="eventType" />
+      </mapping>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-49" />
@@ -758,6 +793,11 @@
       </constraint>
       <mustSupport value="true" />
       <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="033" />
+        <comment value="problems" />
+      </mapping>
+      <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-147" />
         <comment value="Problems" />
@@ -797,6 +837,11 @@
         <code value="string" />
       </type>
       <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="037" />
+        <comment value="note" />
+      </mapping>
+      <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-148" />
         <comment value="Note" />
@@ -825,6 +870,11 @@
       <alias value="Titel" />
       <min value="1" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="039" />
+        <comment value="title" />
+      </mapping>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-149" />
@@ -857,6 +907,11 @@
         </coding>
       </patternCodeableConcept>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="038" />
+        <comment value="code" />
+      </mapping>
     </element>
     <element id="Composition.section:sectionProblems.text">
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -880,6 +935,11 @@
       <definition value="Narrative, potentially formatted, content of the whole section. Must be automatically generated only; manually written narratives are not allowed. Use the healthcare provider's free-text note for that purpose." />
       <alias value="GegenereerdeSamenvatting" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="034" />
+        <comment value="generatedNarrative" />
+      </mapping>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-160" />
@@ -920,6 +980,11 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
       </type>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="035" />
+        <comment value="problem" />
+      </mapping>
     </element>
     <element id="Composition.section:sectionProblems.entry:problem">
       <path value="Composition.section.entry" />
@@ -956,6 +1021,11 @@
       <definition value="Use if no conditions are listed." />
       <alias value="RedenAfwezigheid" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="036" />
+        <comment value="emptyReason" />
+      </mapping>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-164" />
@@ -994,6 +1064,11 @@
         <xpath value="(/f:entry.reference and not /f:emptyReason) or (not(/f:emptyReason) and /f:entry.reference)" />
       </constraint>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="024" />
+        <comment value="allergiesAndIntolerances" />
+      </mapping>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-74" />
@@ -1034,6 +1109,11 @@
         <code value="string" />
       </type>
       <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="030" />
+        <comment value="note" />
+      </mapping>
+      <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-75" />
         <comment value="Note" />
@@ -1062,6 +1142,11 @@
       <alias value="Titel" />
       <min value="1" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="032" />
+        <comment value="title" />
+      </mapping>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-76" />
@@ -1094,6 +1179,11 @@
         </coding>
       </patternCodeableConcept>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="031" />
+        <comment value="code" />
+      </mapping>
     </element>
     <element id="Composition.section:sectionAllergies.text">
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -1117,6 +1207,11 @@
       <definition value="Narrative, potentially formatted, content of the whole section. Must be automatically generated only; manually written narratives are not allowed. Use the healthcare provider's free-text note for that purpose." />
       <alias value="GegenereerdeSamenvatting" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="025" />
+        <comment value="generatedNarrative" />
+      </mapping>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-87" />
@@ -1157,6 +1252,11 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
       </type>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="026" />
+        <comment value="Entry.AllergyIntolerance" />
+      </mapping>
     </element>
     <element id="Composition.section:sectionAllergies.entry:allergyOrIntolerance">
       <path value="Composition.section.entry" />
@@ -1193,6 +1293,21 @@
       <definition value="Use if no Allergies are listed." />
       <alias value="RedenAfwezigheid" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="027" />
+        <comment value="emptyReason" />
+      </mapping>
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="028" />
+        <comment value="emptyReason" />
+      </mapping>
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="029" />
+        <comment value="EmptyReason" />
+      </mapping>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-91" />
@@ -1231,6 +1346,11 @@
         <xpath value="(/f:entry.reference and not /f:emptyReason) or (not(/f:emptyReason) and /f:entry.reference)" />
       </constraint>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="040" />
+        <comment value="medicationSummary" />
+      </mapping>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-129" />
@@ -1271,6 +1391,11 @@
         <code value="string" />
       </type>
       <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="044" />
+        <comment value="note" />
+      </mapping>
+      <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-130" />
         <comment value="Note" />
@@ -1299,6 +1424,11 @@
       <alias value="Titel" />
       <min value="1" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="046" />
+        <comment value="title" />
+      </mapping>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-131" />
@@ -1331,6 +1461,11 @@
         </coding>
       </patternCodeableConcept>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="045" />
+        <comment value="code" />
+      </mapping>
     </element>
     <element id="Composition.section:sectionMedications.text">
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -1354,6 +1489,11 @@
       <definition value="Narrative, potentially formatted, content of the whole section. Must be automatically generated only; manually written narratives are not allowed. Use the healthcare provider's free-text note for that purpose." />
       <alias value="GegenereerdeSamenvatting" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="041" />
+        <comment value="generatedNarrative" />
+      </mapping>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-142" />
@@ -1380,6 +1520,11 @@
       <path value="Composition.section.entry" />
       <comment value="For medication data within NL-PS, the FHIR profiles representing MedicationUse (Medicatiegebruik), including InstructionsForUse (Gebruiksinstructies) and PharmaceuticalProduct (FarmaceutischProduct), from the Medication Process 9 (MP9) information standard, version 3.0.0-rc.x, will be used. These profiles are expected to become EHDS-compliant in the near future and will be incorporated into the NL-PS FHIR specification once available." />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="042" />
+        <comment value="medicationUse" />
+      </mapping>
     </element>
     <element id="Composition.section:sectionMedications.emptyReason">
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -1403,6 +1548,11 @@
       <definition value="Use if no medicines are listed." />
       <alias value="RedenAfwezigheid" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="043" />
+        <comment value="emptyReason" />
+      </mapping>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-146" />
@@ -1441,6 +1591,11 @@
         <xpath value="(/f:entry.reference and not /f:emptyReason) or (not(/f:emptyReason) and /f:entry.reference)" />
       </constraint>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="054" />
+        <comment value="Procedures" />
+      </mapping>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-93" />
@@ -1481,6 +1636,11 @@
         <code value="string" />
       </type>
       <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="058" />
+        <comment value="note" />
+      </mapping>
+      <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-94" />
         <comment value="Note" />
@@ -1509,6 +1669,11 @@
       <alias value="Titel" />
       <min value="1" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="060" />
+        <comment value="title" />
+      </mapping>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-95" />
@@ -1541,6 +1706,11 @@
         </coding>
       </patternCodeableConcept>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="059" />
+        <comment value="code" />
+      </mapping>
     </element>
     <element id="Composition.section:sectionProceduresHx.text">
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -1564,6 +1734,11 @@
       <definition value="Narrative, potentially formatted, content of the whole section. Must be automatically generated only; manually written narratives are not allowed. Use the healthcare provider's free-text note for that purpose." />
       <alias value="GegenereerdeSamenvatting" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="055" />
+        <comment value="generatedNarrative" />
+      </mapping>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-106" />
@@ -1604,6 +1779,11 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
       </type>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="056" />
+        <comment value="procedure" />
+      </mapping>
     </element>
     <element id="Composition.section:sectionProceduresHx.entry:procedure">
       <path value="Composition.section.entry" />
@@ -1640,6 +1820,11 @@
       <definition value="Use if no procedures are listed." />
       <alias value="RedenAfwezigheid" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="057" />
+        <comment value="emptyReason" />
+      </mapping>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-110" />
@@ -1678,6 +1863,11 @@
         <xpath value="(/f:entry.reference and not /f:emptyReason) or (not(/f:emptyReason) and /f:entry.reference)" />
       </constraint>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="047" />
+        <comment value="medicalDevicesAndImplants" />
+      </mapping>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-111" />
@@ -1718,6 +1908,11 @@
         <code value="string" />
       </type>
       <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="051" />
+        <comment value="note" />
+      </mapping>
+      <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-19" />
         <comment value="Note" />
@@ -1746,6 +1941,11 @@
       <alias value="Titel" />
       <min value="1" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="053" />
+        <comment value="title" />
+      </mapping>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-113" />
@@ -1778,6 +1978,11 @@
         </coding>
       </patternCodeableConcept>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="052" />
+        <comment value="code" />
+      </mapping>
     </element>
     <element id="Composition.section:sectionMedicalDevices.text">
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -1801,6 +2006,11 @@
       <definition value="Narrative, potentially formatted, content of the whole section. Must be automatically generated only; manually written narratives are not allowed. Use the healthcare provider's free-text note for that purpose." />
       <alias value="GegenereerdeSamenvatting" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="048" />
+        <comment value="generatedNarrative" />
+      </mapping>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-124" />
@@ -1841,6 +2051,11 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
       </type>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="049" />
+        <comment value="deviceUse" />
+      </mapping>
     </element>
     <element id="Composition.section:sectionMedicalDevices.entry:deviceStatement">
       <path value="Composition.section.entry" />
@@ -1877,6 +2092,11 @@
       <definition value="Use if no medical devices or implants are listed." />
       <alias value="RedenAfwezigheid" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="050" />
+        <comment value="emptyReason" />
+      </mapping>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-128" />
