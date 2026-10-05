@@ -195,12 +195,16 @@ EHR systemen moeten de NL-PS kunnen ontvangen via de in Nederland afgesproken in
 *Een use case is een specifieke beschrijving van een praktijksituatie in de zorg waarbij voor een concrete situatie het uitwisselen van informatie wordt beschreven aan de hand van actoren (mensen, systemen) en transacties (welke informatie wordt wanneer uitgewisseld). Een use case is een verbijzondering van een specifiek onderdeel van het zorgproces.​ Een informatiestandaard kan bestaan uit één of meerdere use cases. *
 
 ![Situatie 1](situatie1.png)
+<div style="clear: both;"></div>
 
 ![Situatie 2](situatie2.png)
+<div style="clear: both;"></div>
 
 ![Situatie 3](situatie3.png)
+<div style="clear: both;"></div>
 
 ![Situatie 4](situatie4.png)
+<div style="clear: both;"></div>
 
 ## Algemeen
 
