@@ -14,12 +14,11 @@ Voor de verklaring van de begrippen die voorkomen in het functioneel ontwerp wor
 ![Situatie 2](situatie2.jpg)
 ![Situatie 3](situatie3.jpg)
 ![Situatie 4](situatie4.jpg)
-<div>
-  <img src="situatie1.jpg" alt="Situatie 1" width="30%">
-  <img src="situatie2.jpg" alt="Situatie 2" width="30%">
-  <img src="situatie3.jpg" alt="Situatie 3" width="30%">
-  <img src="situatie4.jpg" alt="Situatie 4" width="30%">
-</div>
+
+<img src="situatie1.jpg" alt="Situatie 1" style="width: 50%; height: auto;">
+<img src="situatie2.jpg" alt="Situatie 2" style="width: 50%; height: auto;">
+<img src="situatie3.jpg" alt="Situatie 3" style="width: 50%; height: auto;">
+<img src="situatie4.jpg" alt="Situatie 4" style="width: 50%; height: auto;">
 
 ## Doelgroep
 
