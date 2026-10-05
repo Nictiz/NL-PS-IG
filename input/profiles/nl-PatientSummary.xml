@@ -25,7 +25,7 @@
   </mapping>
   <mapping>
     <identity value="NLPS-PatientSummary-v0.1" />
-    <uri value="http://nictiz.nl/nlps/StructureDefinition/PatientSummary-model" />
+    <uri value="http://ig.nictiz.nl/nlps/StructureDefinition/PatientSummary" />
     <name value="Dataset NLPS-PatientSummary-v0.1" />
   </mapping>
   <kind value="resource" />
@@ -1016,7 +1016,7 @@
       <sliceName value="problem" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://nictiz.nl/gbb/StructureDefinition/nl-core-Condition" />
+        <targetProfile value="http://ig.nictiz.nl/gbb/StructureDefinition/nl-core-Condition" />
       </type>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
@@ -1288,7 +1288,7 @@
       <sliceName value="allergyOrIntolerance" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://nictiz.nl/gbb/StructureDefinition/nl-core-AllergyIntolerance" />
+        <targetProfile value="http://ig.nictiz.nl/gbb/StructureDefinition/nl-core-AllergyIntolerance" />
       </type>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
@@ -1815,7 +1815,7 @@
       <sliceName value="procedure" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://nictiz.nl/gbb/StructureDefinition/nl-core-Procedure" />
+        <targetProfile value="http://ig.nictiz.nl/gbb/StructureDefinition/nl-core-Procedure" />
       </type>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
@@ -2087,7 +2087,7 @@
       <sliceName value="deviceStatement" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://nictiz.nl/gbb/StructureDefinition/nl-core-DeviceUseStatement" />
+        <targetProfile value="http://ig.nictiz.nl/gbb/StructureDefinition/nl-core-DeviceUse" />
       </type>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
