@@ -423,8 +423,8 @@
       <alias value="JuridischeAuthenticatie" />
       <mapping>
         <identity value="requirements-PatientSummary" />
-        <map value="017" />
-        <comment value="legalAuthenticator" />
+        <map value="016" />
+        <comment value="legalAuthentication" />
       </mapping>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
@@ -523,6 +523,11 @@
       </type>
       <mustSupport value="true" />
       <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="017" />
+        <comment value="legalAuthenticator" />
+      </mapping>
+      <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-46" />
         <comment value="Practitioner" />
@@ -544,6 +549,11 @@
       <short value="Validator" />
       <definition value="Document attestation details." />
       <alias value="Validator" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="012" />
+        <comment value="attestation" />
+      </mapping>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-37" />
@@ -571,6 +581,11 @@
       <definition value="Indicates the level of authority of the attestation. The type of attestation the authenticator offers." />
       <patternCode value="professional" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="014" />
+        <comment value="Mode of attestion" />
+      </mapping>
     </element>
     <element id="Composition.attester:validator.time">
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -595,6 +610,11 @@
       <alias value="DatumTijd" />
       <min value="1" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="015" />
+        <comment value="dateTime of attestation" />
+      </mapping>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-42" />
@@ -630,6 +650,11 @@
         <targetProfile value="http://nictiz.nl/gbb/StructureDefinition/nl-core-Device" />
       </type>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="013" />
+        <comment value="attester[x]" />
+      </mapping>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-40" />
