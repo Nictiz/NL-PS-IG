@@ -268,7 +268,7 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://nictiz.nl/gbb/StructureDefinition/nl-core-Patient" />
+        <targetProfile value="http://ig.nictiz.nl/gbb/StructureDefinition/nl-core-Patient" />
       </type>
       <mustSupport value="true" />
       <mapping>
@@ -517,9 +517,9 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://nictiz.nl/gbb/StructureDefinition/nl-core-Practitioner" />
-        <targetProfile value="http://nictiz.nl/gbb/StructureDefinition/nl-core-PractitionerRole" />
-        <targetProfile value="http://nictiz.nl/gbb/StructureDefinition/nl-core-Organization" />
+        <targetProfile value="http://ig.nictiz.nl/gbb/StructureDefinition/nl-core-Practitioner" />
+        <targetProfile value="http://ig.nictiz.nl/gbb/StructureDefinition/nl-core-PractitionerRole" />
+        <targetProfile value="http://ig.nictiz.nl/gbb/StructureDefinition/nl-core-Organization" />
       </type>
       <mustSupport value="true" />
       <mapping>
@@ -645,9 +645,9 @@
       <min value="1" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://nictiz.nl/gbb/StructureDefinition/nl-core-Practitioner" />
-        <targetProfile value="http://nictiz.nl/gbb/StructureDefinition/nl-core-PractitionerRole" />
-        <targetProfile value="http://nictiz.nl/gbb/StructureDefinition/nl-core-Device" />
+        <targetProfile value="http://ig.nictiz.nl/gbb/StructureDefinition/nl-core-Practitioner" />
+        <targetProfile value="http://ig.nictiz.nl/gbb/StructureDefinition/nl-core-PractitionerRole" />
+        <targetProfile value="http://ig.nictiz.nl/gbb/StructureDefinition/nl-core-Device" />
       </type>
       <mustSupport value="true" />
       <mapping>
@@ -694,7 +694,7 @@
       <alias value="Organisatie" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://nictiz.nl/gbb/StructureDefinition/nl-core-Organization" />
+        <targetProfile value="http://ig.nictiz.nl/gbb/StructureDefinition/nl-core-Organization" />
       </type>
       <mustSupport value="true" />
       <mapping>
@@ -1001,7 +1001,7 @@
       <alias value="Gezondheidstoestand" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition" />
+        <targetProfile value="http://ig.nictiz.nl/gbb/StructureDefinition/nl-core-Condition" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
       </type>
       <mustSupport value="true" />
@@ -1273,7 +1273,7 @@
       <alias value="AllergieIntolerantie" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/AllergyIntolerance" />
+        <targetProfile value="http://ig.nictiz.nl/gbb/StructureDefinition/nl-core-AllergyIntolerance" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
       </type>
       <mustSupport value="true" />
@@ -1800,7 +1800,7 @@
       <alias value="Verrichting" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure" />
+        <targetProfile value="http://ig.nictiz.nl/gbb/StructureDefinition/nl-core-Procedure" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
       </type>
       <mustSupport value="true" />
@@ -2072,7 +2072,7 @@
       <alias value="MedischHulpmiddel" />
       <type>
         <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/DeviceUseStatement" />
+        <targetProfile value="http://ig.nictiz.nl/gbb/StructureDefinition/nl-core-DeviceUse" />
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/DocumentReference" />
       </type>
       <mustSupport value="true" />
