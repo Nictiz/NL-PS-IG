@@ -19,9 +19,9 @@ Dit functioneel ontwerp is bedoeld voor partijen die betrokken zijn bij de ontwi
 - landelijke en regionale infrastructuurpartijen die de gegevensuitwisseling ondersteunen;
 - beleidsmakers, toezichthouders en partijen die verantwoordelijk zijn voor kwalificatie, conformiteitsbeoordeling en implementatie.
 
-## Kaders & Uitgangspunten
+# Kaders & Uitgangspunten
 
-### Richtlijn en proces
+## Richtlijn en proces
 
 De European Health Data Space (EHDS) is een Europese verordening die het juridische kader vormt voor de elektronische beschikbaarheid en uitwisseling van de Patient Summary. De wettelijke eisen en specificaties voor interoperabele EHR-systemen, ook wel het EEHRxF (European Electronic Health Record exchange Format) genoemd, worden gespecificeerd aan de hand van artikel 15 van de EHDS implementing acts. Aan het EEHRxF format wordt invulling gegeven met Europese lidstaten binnen het Extended EHR project (Xt-EHR) door middel van Implementation Guides. Voor de Patient Summary is de volgende Europese implementatiegids opgeleverd, die zal dienen als basis voor deze informatiestandaard: [Xt-EHR Deliverable 6.1 - Patient Summary: Implementation guides on EEHRxF, functional and technical requirements and specifications for EHR systems](https://www.xt-ehr.eu/deliverables/). Dit document beschrijft de functionele, semantische en technische specificaties voor de Patient Summary als onderdeel van het European Electronic Health Record Exchange Format (EEHRxF).
 
@@ -29,7 +29,7 @@ Grensoverschrijdende gegevensuitwisseling vanuit Nederland verloopt via de [Nati
 
 Voor de Nederlandse context zijn twee informatiestandaarden als bron gebruikt: de [**BgZ-MSZ**](https://www.nictiz.nl/informatiestandaarden/basisgegevensset-zorg/) en de [**Spoedsamenvatting**](https://www.nictiz.nl/informatiestandaarden/acute-zorg/). 
 
-### Reikwijdte Informatiestandaard
+## Reikwijdte Informatiestandaard
 
 *De reikwijdte van de informatiestandaard beslaat de functionele beschrijvingen en de dataset voor alle gegevensuitwisselingen binnen de zorgprocessen waarbij een bevoegde partij behoefte heeft aan een patiëntsamenvatting. Hieronder vallen onder andere de volgende processen:*
 
@@ -40,7 +40,7 @@ Voor de Nederlandse context zijn twee informatiestandaarden als bron gebruikt: d
 
 Voor volledige aansluiting met het Nederlandse contactpunt (NCPeH-NL) voor grensoverschrijdende uitwisselingen en aansluiting op de processen van MyHealth@EU zijn mogelijk aanvullende stappen nodig. Hiervoor verwijzen we naar de beschikbare documentatie op: <https://www.ncpeh.nl/>
 
-### Infrastructuur
+## Infrastructuur
 
 De NL-PS gegevens zullen in Nederland via het [Landelijk Dekkend Netwerk](https://www.datavoorgezondheid.nl/onderwerpen/l/landelijk-dekkend-netwerk) (LDN) worden uitgewisseld, dat door het ministerie van Volksgezondheid, Welzijn en Sport (VWS) in samenwerking met partijen in zorg en ICT wordt bewerkstelligd. Via het *landelijk dekkend netwerk van infrastructuren* worden zorgaanbieders met elkaar verbonden voor het uitwisselen en beschikbaar stellen van gezondheidsgegevens. Als onderdeel hiervan staan in het Landelijk Afsprakenstelsel alle technische, organisatorische en juridische afspraken die nodig zijn om te zorgen dat burgers en zorgverleners kunnen vertrouwen op de data en op het veilige en verantwoorde gebruik ervan. Daarnaast wordt middels het programma [Implementatie generieke functies van VWS](https://www.datavoorgezondheid.nl/onderwerpen/g/generieke-functies) samengewerkt met het zorg- en ICT-veld aan een set afspraken, standaarden en voorzieningen om Identificatie, Authenticatie, Toestemming, Autorisatie, Lokalisatie en Addressering vast te stellen.
 
@@ -204,12 +204,12 @@ EHR systemen moeten de NL-PS kunnen ontvangen via de in Nederland afgesproken in
 ![Situatie 4](situatie4.png)
 <div style="clear: both;"></div>
 
-## Algemeen
+# Algemeen
 
 De use cases beschrijven het functionele gebruik van de NL-PS en zijn toepasbaar op nationale uitwisseling en, waar aangegeven, op grensoverschrijdende uitwisseling via MyHealth@EU. 
 
 Vanuit de EHDS Xt-EHR implementation guide zijn onderstaande usecases geïdentificeerd. Deze zijn per usecase visueel weergegeven. Verdere uitwerking van de bijbehorende processen komen in een volgende versie.
 
-## Release notes
+# Release notes
 
 Voeg een tabel in waarin de wijzigingen voor deze informatiestandaard als BITS-issues staan.
