@@ -1,5 +1,3 @@
-# Functioneel Ontwerp Implementatiegids NL-PS
-
 # Inleiding
 
 ## Algemeen
@@ -141,7 +139,7 @@ Eis3: Het systeem kan een beperkte set informatie uit de NL-PS overnemen.
 | **PS Data Holder** | Beheert PS-gegevens en maakt deze toegankelijk voor bevoegde raadpleging. | - Beschikbaarstellend systeem NL-PS - Beschikbaarstellend systeem GBB’s | Bewaren, beschikbaar houden en leveren van PS-gegevens op verzoek. |
 | **PS Consumer** | Vraagt de NL-PS op, ontvangt deze en gebruikt de informatie binnen het zorgproces. | - Raadplegend systeem NL-PS - Raadplegend systeem GBB’s - Ontvangend systeem - Tonend systeem - Verwerkend systeem | Opvragen, ontvangen, tonen en eventueel overnemen van informatie uit de NL-PS. |
 
-# Transacties / Capabiliteiten / Requirements
+## Transacties / Capabiliteiten / Requirements
 
 **Pre-proces: (informatief)**
 
@@ -190,7 +188,7 @@ EHR systemen moeten de NL-PS kunnen ontvangen via de in Nederland afgesproken in
 
 **Disclaimer**: Dit is een onderdeel van de Xt-EHR Patient Summary guidelines, echter is het updaten van de NL-PS is op dit moment geen expliciet onderdeel van deze informatiestandaard. Afspraken met betrekking tot consolidatie en reconciliatie zijn momenteel nog in ontwikkeling.
 
-# Praktijkgevallen / Use case(s)
+## Praktijkgevallen / Use case(s)
 
 *Een use case is een specifieke beschrijving van een praktijksituatie in de zorg waarbij voor een concrete situatie het uitwisselen van informatie wordt beschreven aan de hand van actoren (mensen, systemen) en transacties (welke informatie wordt wanneer uitgewisseld). Een use case is een verbijzondering van een specifiek onderdeel van het zorgproces.​ Een informatiestandaard kan bestaan uit één of meerdere use cases. *
 
@@ -212,6 +210,6 @@ De use cases beschrijven het functionele gebruik van de NL-PS en zijn toepasbaar
 
 Vanuit de EHDS Xt-EHR implementation guide zijn onderstaande usecases geïdentificeerd. Deze zijn per usecase visueel weergegeven. Verdere uitwerking van de bijbehorende processen komen in een volgende versie.
 
-# Release notes
+## Release notes
 
 Voeg een tabel in waarin de wijzigingen voor deze informatiestandaard als BITS-issues staan.
