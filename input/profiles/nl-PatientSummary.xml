@@ -19,6 +19,11 @@
   <copyright value="Copyright and related rights waived via CC0, https://creativecommons.org/publicdomain/zero/1.0/. This does not apply to information from third parties, for example a medical terminology system. The implementer alone is responsible for identifying and obtaining any necessary licenses or authorizations to utilize third party IP in connection with the specification or otherwise." />
   <fhirVersion value="4.0.1" />
   <mapping>
+    <identity value="requirements-PatientSummary" />
+    <uri value="http://ig.nictiz.nl/nlps/Requirements/PatientSummary" />
+    <name value="Information requirements for PatientSummary" />
+  </mapping>
+  <mapping>
     <identity value="NLPS-PatientSummary-v0.1" />
     <uri value="http://nictiz.nl/nlps/StructureDefinition/PatientSummary-model" />
     <name value="Dataset NLPS-PatientSummary-v0.1" />
@@ -51,6 +56,11 @@
       <definition value="Language in which the resource is written. Language is expressed by the IETF language tag." />
       <alias value="Taal" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="007" />
+        <comment value="Language" />
+      </mapping>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-32" />
@@ -121,6 +131,11 @@
       <min value="1" />
       <mustSupport value="true" />
       <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="003" />
+        <comment value="Identifier" />
+      </mapping>
+      <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-24" />
         <comment value="Identifier" />
@@ -148,6 +163,11 @@
       <definition value="Status of the document." />
       <alias value="Status" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="006" />
+        <comment value="Status" />
+      </mapping>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-31" />
@@ -180,6 +200,11 @@
         </coding>
       </patternCodeableConcept>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="008" />
+        <comment value="Type" />
+      </mapping>
     </element>
     <element id="Composition.category">
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
@@ -237,6 +262,11 @@
       </type>
       <mustSupport value="true" />
       <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="002" />
+        <comment value="Subject" />
+      </mapping>
+      <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-23" />
         <comment value="Patient" />
@@ -264,6 +294,11 @@
       <definition value="Date of finalizing/issuing the document." />
       <alias value="Datum" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="005" />
+        <comment value="Date" />
+      </mapping>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-30" />
@@ -301,6 +336,11 @@
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson" />
       </type>
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="004" />
+        <comment value="Author" />
+      </mapping>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-26" />
@@ -344,6 +384,11 @@
       <definition value="Human readable document title that can be displayed in search results, etc. This can be documentType's display name, or it can be assembled from multiple elements. Examples: 'Patient Summary of Jane Green 10.12.2024'." />
       <alias value="Titel" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="009" />
+        <comment value="Title" />
+      </mapping>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-34" />
@@ -658,6 +703,11 @@
       <definition value="Time period of information covered in the document." />
       <alias value="Periode" />
       <mustSupport value="true" />
+      <mapping>
+        <identity value="requirements-PatientSummary" />
+        <map value="010" />
+        <comment value="Period" />
+      </mapping>
       <mapping>
         <identity value="NLPS-PatientSummary-v0.1" />
         <map value="nlps-dataelement-172" />
