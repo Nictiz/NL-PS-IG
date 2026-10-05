@@ -455,7 +455,7 @@
       <mustSupport value="true" />
       <mapping>
         <identity value="requirements-PatientSummary" />
-        <map value="19" />
+        <map value="019" />
         <comment value="mode of legal authentication" />
       </mapping>
     </element>
