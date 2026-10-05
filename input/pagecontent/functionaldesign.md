@@ -10,11 +10,6 @@ Hier in dit document, beschrijven we de informatiestandaard Nederlandse Patients
 
 Voor de verklaring van de begrippen die voorkomen in het functioneel ontwerp wordt verwezen naar het [begrippenoverzicht op de Nictiz website](https://www.nictiz.nl/standaarden/begrippen/).
 
-![Situatie 1](situatie1.png)
-![Situatie 2](situatie2.png)
-![Situatie 3](situatie3.png)
-![Situatie 4](situatie4.png)
-
 ## Doelgroep
 
 Dit functioneel ontwerp is bedoeld voor partijen die betrokken zijn bij de ontwikkeling, implementatie, beproeving, en het beheer van de NL-PS. De primaire doelgroep bestaat uit:
@@ -198,6 +193,11 @@ EHR systemen moeten de NL-PS kunnen ontvangen via de in Nederland afgesproken in
 # Praktijkgevallen / Use case(s)
 
 *Een use case is een specifieke beschrijving van een praktijksituatie in de zorg waarbij voor een concrete situatie het uitwisselen van informatie wordt beschreven aan de hand van actoren (mensen, systemen) en transacties (welke informatie wordt wanneer uitgewisseld). Een use case is een verbijzondering van een specifiek onderdeel van het zorgproces.​ Een informatiestandaard kan bestaan uit één of meerdere use cases. *
+
+![Situatie 1](situatie1.png)
+![Situatie 2](situatie2.png)
+![Situatie 3](situatie3.png)
+![Situatie 4](situatie4.png)
 
 ## Algemeen
 
