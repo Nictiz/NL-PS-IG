@@ -37,7 +37,7 @@ menu:
   Home: index.html
   Background: background.html
   Functional Design: functional-design.html
-  Technical Design: technicaldesign.html
+  Technical Design: technical-design.html
 
   Requirements:
     Overview: PatientSummary.html
