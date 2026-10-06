@@ -204,12 +204,6 @@ EHR systemen moeten de NL-PS kunnen ontvangen via de in Nederland afgesproken in
 ![Situatie 4](situatie4.png)
 <div style="clear: both;"></div>
 
-### Algemeen
-
-De use cases beschrijven het functionele gebruik van de NL-PS en zijn toepasbaar op nationale uitwisseling en, waar aangegeven, op grensoverschrijdende uitwisseling via MyHealth@EU. 
-
-Vanuit de EHDS Xt-EHR implementation guide zijn onderstaande usecases geïdentificeerd. Deze zijn per usecase visueel weergegeven. Verdere uitwerking van de bijbehorende processen komen in een volgende versie.
-
 ### Release notes
 
 Voeg een tabel in waarin de wijzigingen voor deze informatiestandaard als BITS-issues staan.
