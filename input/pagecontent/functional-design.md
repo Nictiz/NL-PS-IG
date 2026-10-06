@@ -1,6 +1,6 @@
-# Inleiding
+### Inleiding
 
-## Algemeen
+#### Algemeen
 
 De European Patient Summary (EPS) is een gestandaardiseerde samenvatting van minimaal essentiële en aanvullende informatie over de klinische toestand van een patiënt, bedoeld ter ondersteuning van de zorgverlener en de patiënt in geval van noodsituaties, ongeplande en geplande zorg, zowel in eigen land als in het buitenland. De EPS is een van de eerste categorieën onder de [EHDS wetgeving artikel 15](https://ehdsexplorer.eu/article/15). Interoperabiliteit wordt mogelijk gemaakt middels het EEHRxF (European electronic health record exchange format) wat is uitgewerkt door het Xt-EHR project in samenwerking met de lidstaten.
 
@@ -8,7 +8,7 @@ Hier in dit document, beschrijven we de informatiestandaard Nederlandse Patients
 
 Voor de verklaring van de begrippen die voorkomen in het functioneel ontwerp wordt verwezen naar het [begrippenoverzicht op de Nictiz website](https://www.nictiz.nl/standaarden/begrippen/).
 
-## Doelgroep
+#### Doelgroep
 
 Dit functioneel ontwerp is bedoeld voor partijen die betrokken zijn bij de ontwikkeling, implementatie, beproeving, en het beheer van de NL-PS. De primaire doelgroep bestaat uit:
 
@@ -19,9 +19,9 @@ Dit functioneel ontwerp is bedoeld voor partijen die betrokken zijn bij de ontwi
 - landelijke en regionale infrastructuurpartijen die de gegevensuitwisseling ondersteunen;
 - beleidsmakers, toezichthouders en partijen die verantwoordelijk zijn voor kwalificatie, conformiteitsbeoordeling en implementatie.
 
-# Kaders & Uitgangspunten
+### Kaders & Uitgangspunten
 
-## Richtlijn en proces
+#### Richtlijn en proces
 
 De European Health Data Space (EHDS) is een Europese verordening die het juridische kader vormt voor de elektronische beschikbaarheid en uitwisseling van de Patient Summary. De wettelijke eisen en specificaties voor interoperabele EHR-systemen, ook wel het EEHRxF (European Electronic Health Record exchange Format) genoemd, worden gespecificeerd aan de hand van artikel 15 van de EHDS implementing acts. Aan het EEHRxF format wordt invulling gegeven met Europese lidstaten binnen het Extended EHR project (Xt-EHR) door middel van Implementation Guides. Voor de Patient Summary is de volgende Europese implementatiegids opgeleverd, die zal dienen als basis voor deze informatiestandaard: [Xt-EHR Deliverable 6.1 - Patient Summary: Implementation guides on EEHRxF, functional and technical requirements and specifications for EHR systems](https://www.xt-ehr.eu/deliverables/). Dit document beschrijft de functionele, semantische en technische specificaties voor de Patient Summary als onderdeel van het European Electronic Health Record Exchange Format (EEHRxF).
 
@@ -29,7 +29,7 @@ Grensoverschrijdende gegevensuitwisseling vanuit Nederland verloopt via de [Nati
 
 Voor de Nederlandse context zijn twee informatiestandaarden als bron gebruikt: de [**BgZ-MSZ**](https://www.nictiz.nl/informatiestandaarden/basisgegevensset-zorg/) en de [**Spoedsamenvatting**](https://www.nictiz.nl/informatiestandaarden/acute-zorg/). 
 
-## Reikwijdte Informatiestandaard
+#### Reikwijdte Informatiestandaard
 
 *De reikwijdte van de informatiestandaard beslaat de functionele beschrijvingen en de dataset voor alle gegevensuitwisselingen binnen de zorgprocessen waarbij een bevoegde partij behoefte heeft aan een patiëntsamenvatting. Hieronder vallen onder andere de volgende processen:*
 
@@ -40,21 +40,21 @@ Voor de Nederlandse context zijn twee informatiestandaarden als bron gebruikt: d
 
 Voor volledige aansluiting met het Nederlandse contactpunt (NCPeH-NL) voor grensoverschrijdende uitwisselingen en aansluiting op de processen van MyHealth@EU zijn mogelijk aanvullende stappen nodig. Hiervoor verwijzen we naar de beschikbare documentatie op: <https://www.ncpeh.nl/>
 
-## Infrastructuur
+#### Infrastructuur
 
 De NL-PS gegevens zullen in Nederland via het [Landelijk Dekkend Netwerk](https://www.datavoorgezondheid.nl/onderwerpen/l/landelijk-dekkend-netwerk) (LDN) worden uitgewisseld, dat door het ministerie van Volksgezondheid, Welzijn en Sport (VWS) in samenwerking met partijen in zorg en ICT wordt bewerkstelligd. Via het *landelijk dekkend netwerk van infrastructuren* worden zorgaanbieders met elkaar verbonden voor het uitwisselen en beschikbaar stellen van gezondheidsgegevens. Als onderdeel hiervan staan in het Landelijk Afsprakenstelsel alle technische, organisatorische en juridische afspraken die nodig zijn om te zorgen dat burgers en zorgverleners kunnen vertrouwen op de data en op het veilige en verantwoorde gebruik ervan. Daarnaast wordt middels het programma [Implementatie generieke functies van VWS](https://www.datavoorgezondheid.nl/onderwerpen/g/generieke-functies) samengewerkt met het zorg- en ICT-veld aan een set afspraken, standaarden en voorzieningen om Identificatie, Authenticatie, Toestemming, Autorisatie, Lokalisatie en Addressering vast te stellen.
 
 Bij grensoverschrijdende uitwisselingen wordt aangesloten op de [MyHealth@EU](https://health.ec.europa.eu/ehealth-digital-health-and-care/digital-health-and-care/electronic-cross-border-health-services_en?utm_source=chatgpt.com) infrastructuur via de [National Contact Point for eHealth (NCPeH) Nederland](https://www.ncpeh.nl/).
 
-# Ontwerp Nederlandse Patientsamenvatting
+### Ontwerp Nederlandse Patientsamenvatting
 
-## Ontwerpaanpak
+#### Ontwerpaanpak
 
 De NL-PS wijkt af van de gebruikelijke werkwijze bij informatiestandaarden, waarbij domeinspecifieke usecases het uitgangspunt vormen. Voor de NL-PS wordt eerst op basis van de EPS een domeinoverstijgende set van systeemrollen uitgewerkt met de bijbehorende functionele eisen.
 
 In een volgende fase wordt bepaald op welke manier domeinspecifieke usecases hierop aansluiten en welke aanvullende eisen voor systeemrollen hieruit voortvloeien. De uitwerking daarvan valt buiten de huidige scope.
 
-## Specificatie van NL-PS
+#### Specificatie van NL-PS
 
 De NL-PS is de Nederlandse implementatie van de EPS. De EPS specificatie en de EEHRxF vormt de basis voor de inhoud, structuur, betekenis, kardinaliteiten en terminologie van de NL-PS. In het afsprakenmodel (logisch model) is de opbouw van de NL-PS en de bijbehorende componenten gespecificeerd. 
 
@@ -62,7 +62,7 @@ Om de Nederlandse zorgprocessen te ondersteunen, zijn Generieke Bouwblokken (GBB
 
 In toekomstige versies zullen de secties verder worden aangevuld voor domeinspecifieke use cases, en internationale uitwisselingen.
 
-## Bedrijfsrollen
+#### Bedrijfsrollen
 
 Binnen de EHDS Xt-EHR implementation guides zijn er bedrijfsrollen gedefinieerd voor de EPS. De bedrijfsrollen kunnen ingevuld worden door technische actoren:
 
@@ -70,7 +70,7 @@ Binnen de EHDS Xt-EHR implementation guides zijn er bedrijfsrollen gedefinieerd 
 - **Beheerder van PS-gegevens (PS Data Holder):** slaat de PS veilig op en maakt deze toegankelijk voor bevoegde gebruikers. Kan ook metadata publiceren en verzoeken om gegevenslevering afhandelen. Deze optionele, architectuurafhankelijke rol kan functies van een *Exchanger *vervullen.
 - **Gebruiker van de patiëntsamenvatting (PS Consumer):** haalt NL-PS-gegevens op en bekijkt of verwerkt deze voor zorgverlening, zorgcontinuïteit of zelfmanagement door de patiënt.
 
-## Systeemrollen
+#### Systeemrollen
 
 Een systeem kan verschillende rollen aannemen. Om te voldoen aan een systeemrol zijn er bepaalde eisen en capaciteiten verwacht. Hieronder staan de systeemrollen die in scope staan voor de NL-PS gedefinieerd en aangevuld met de eisen. In de tabel is te zien welke systeemrollen ondersteund moeten worden door een systeem om te voldoen aan de genoemde bedrijfsrollen. Voor de rollen registrerend/vastleggend en verwerkend system is nog geen aansluiting op de bedrijfsrollen van EHDS gevonden. 
 
@@ -131,7 +131,7 @@ Eis3: Het systeem kan een beperkte set informatie uit de NL-PS overnemen.
 | **Tonend systeem** | Het systeem is in staat om alle informatie uit het NL-PS-logische model aan gebruikers te tonen. |
 | **Verwerkend systeem** | Het systeem is in staat om informatie uit de NL-PS te verwerken en over te nemen in het eigen systeem. |
 
-## Systeemrollen per bedrijfsrol
+#### Systeemrollen per bedrijfsrol
 
 | **Bedrijfsrol** | **Kernverantwoordelijkheid** | **Bijbehorende systeemrollen** | **Hoofdactiviteit in de uitwisseling** |
 | --- | --- | --- | --- |
@@ -139,7 +139,7 @@ Eis3: Het systeem kan een beperkte set informatie uit de NL-PS overnemen.
 | **PS Data Holder** | Beheert PS-gegevens en maakt deze toegankelijk voor bevoegde raadpleging. | - Beschikbaarstellend systeem NL-PS - Beschikbaarstellend systeem GBB’s | Bewaren, beschikbaar houden en leveren van PS-gegevens op verzoek. |
 | **PS Consumer** | Vraagt de NL-PS op, ontvangt deze en gebruikt de informatie binnen het zorgproces. | - Raadplegend systeem NL-PS - Raadplegend systeem GBB’s - Ontvangend systeem - Tonend systeem - Verwerkend systeem | Opvragen, ontvangen, tonen en eventueel overnemen van informatie uit de NL-PS. |
 
-## Transacties / Capabiliteiten / Requirements
+#### Transacties / Capabiliteiten / Requirements
 
 **Pre-proces: (informatief)**
 
@@ -157,7 +157,7 @@ Eis3: Het systeem kan een beperkte set informatie uit de NL-PS overnemen.
 
 1. De zorgverlener of zijn systeem zijn nu in staat de NL-PS te gebruiken en mogelijk om data te verwerken of over te nemen in het eigen systeem (verwerkend systeem)
 
-## Raadplegen / Query van de PS 
+#### Raadplegen / Query van de PS 
 
 EHR systemen moeten een NL-PS kunnen opvragen middels query-parameters.
 
@@ -166,7 +166,7 @@ EHR systemen moeten een NL-PS kunnen opvragen middels query-parameters.
 | ​**​Transactie** | **​Systeemrol** | **​Systeem** | ​​**Bedrijfsrol** |
 | Raadplegen Patient Summary | ​NPS-PSR-FHIR | EHR Raadplegende zorgaanbieder | PS Consumer |
 
-## Opstellen PS / beschikbaarstellen
+#### Opstellen PS / beschikbaarstellen
 
 EHR systemen moeten een NL-PS kunnen opstellen aan de hand van de in de transactiedataset vastgestelde gegevens en deze op verzoek beschikbaarstellen via de afgesproken Nederlandse infrastructuur.
 
@@ -175,7 +175,7 @@ EHR systemen moeten een NL-PS kunnen opstellen aan de hand van de in de transact
 | ​**​Transactie** | **​Systeemrol** | **​Systeem** | ​​**Bedrijfsrol** |
 | Beschikbaarstellen Patient Summary | ​NPS-PSB-FHIR | EHR Beschikbaarstellende zorgaanbieder | PS Producer |
 
-## Ontvangen van de PS
+#### Ontvangen van de PS
 
 EHR systemen moeten de NL-PS kunnen ontvangen via de in Nederland afgesproken infrastructuur en tonen aan de hand van de in de transactiedataset vastgestelde gegevens.
 
@@ -184,11 +184,11 @@ EHR systemen moeten de NL-PS kunnen ontvangen via de in Nederland afgesproken in
 | ​**​Transactie** | **​Systeemrol** | **​Systeem** | ​​**Bedrijfsrol** |
 | Ontvangen Patient Summary | ​NPS-PSO-FHIR | EHR Ontvangende zorgaanbieder | PS Consumer |
 
-## Update van de PS
+#### Update van de PS
 
 **Disclaimer**: Dit is een onderdeel van de Xt-EHR Patient Summary guidelines, echter is het updaten van de NL-PS is op dit moment geen expliciet onderdeel van deze informatiestandaard. Afspraken met betrekking tot consolidatie en reconciliatie zijn momenteel nog in ontwikkeling.
 
-## Praktijkgevallen / Use case(s)
+#### Praktijkgevallen / Use case(s)
 
 *Een use case is een specifieke beschrijving van een praktijksituatie in de zorg waarbij voor een concrete situatie het uitwisselen van informatie wordt beschreven aan de hand van actoren (mensen, systemen) en transacties (welke informatie wordt wanneer uitgewisseld). Een use case is een verbijzondering van een specifiek onderdeel van het zorgproces.​ Een informatiestandaard kan bestaan uit één of meerdere use cases. *
 
@@ -204,12 +204,12 @@ EHR systemen moeten de NL-PS kunnen ontvangen via de in Nederland afgesproken in
 ![Situatie 4](situatie4.png)
 <div style="clear: both;"></div>
 
-# Algemeen
+### Algemeen
 
 De use cases beschrijven het functionele gebruik van de NL-PS en zijn toepasbaar op nationale uitwisseling en, waar aangegeven, op grensoverschrijdende uitwisseling via MyHealth@EU. 
 
 Vanuit de EHDS Xt-EHR implementation guide zijn onderstaande usecases geïdentificeerd. Deze zijn per usecase visueel weergegeven. Verdere uitwerking van de bijbehorende processen komen in een volgende versie.
 
-# Release notes
+### Release notes
 
 Voeg een tabel in waarin de wijzigingen voor deze informatiestandaard als BITS-issues staan.
