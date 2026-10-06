@@ -2,10 +2,8 @@ id: nictiz.nl.nlps
 canonical: http://ig.nictiz.nl/nlps
 name: PatientSummary
 status: draft
-version: 0.1.0
 fhirVersion: 4.0.1
 copyrightYear: 2026+
-releaseLabel: Alpha
 
 publisher:
   name: Nictiz
