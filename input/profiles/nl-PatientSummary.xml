@@ -861,6 +861,7 @@
       <type>
         <code value="string" />
       </type>
+      <mustSupport value="true" />
       <mapping>
         <identity value="requirements-PatientSummary" />
         <map value="037" />
@@ -1133,6 +1134,7 @@
       <type>
         <code value="string" />
       </type>
+      <mustSupport value="true" />
       <mapping>
         <identity value="requirements-PatientSummary" />
         <map value="030" />
@@ -1415,6 +1417,7 @@
       <type>
         <code value="string" />
       </type>
+      <mustSupport value="true" />
       <mapping>
         <identity value="requirements-PatientSummary" />
         <map value="044" />
@@ -1660,6 +1663,7 @@
       <type>
         <code value="string" />
       </type>
+      <mustSupport value="true" />
       <mapping>
         <identity value="requirements-PatientSummary" />
         <map value="058" />
@@ -1932,6 +1936,7 @@
       <type>
         <code value="string" />
       </type>
+      <mustSupport value="true" />
       <mapping>
         <identity value="requirements-PatientSummary" />
         <map value="051" />
