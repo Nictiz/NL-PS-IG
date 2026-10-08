@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="nl-PatientSummary" />
+  <extension
+    url="http://hl7.org/fhir/StructureDefinition/structuredefinition-imposeProfile">
+    <valueCanonical
+      value="http://hl7.eu/fhir/eps/StructureDefinition/composition-eu-eps"/>
+  </extension>
   <url value="http://ig.nictiz.nl/nlps/StructureDefinition/nl-PatientSummary" />
   <name value="NlPatientSummary" />
   <title value="nl PatientSummary" />
