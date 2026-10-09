@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+
+msgid "Home"
+msgstr ""
+
+msgid "Background"
+msgstr ""
+
+msgid "Functional Design"
+msgstr ""
+
+msgid "Technical Design"
+msgstr ""
+
+msgid "Requirements"
+msgstr ""
+
+msgid "Overview"
+msgstr ""
+
+msgid "Requirements"
+msgstr ""
+
+msgid "Specification"
+msgstr ""
+
+msgid "Logical Model"
+msgstr ""
+
+msgid "FHIR Profile"
+msgstr ""
+
+msgid "Dependencies"
+msgstr ""
+
+msgid "Testing"
+msgstr ""
+
+msgid "Validation"
+msgstr ""
+
+msgid "Artefacts"
+msgstr ""
