@@ -1,8 +1,10 @@
 id: nictiz.nl.nlps
 canonical: http://ig.nictiz.nl/nlps
 name: PatientSummary
+title: PatientSummary IG NL
+description: This FHIR IG contains the Dutch Patient Summary built from EHDS compliant generic building blocks. This Patient Summary has Dutch additional specifications but is EHDS first.
 status: draft
-version: 0.1.0
+version: 1.0.0-alpha.1
 fhirVersion: 4.0.1
 copyrightYear: 2026+
 releaseLabel: Alpha
