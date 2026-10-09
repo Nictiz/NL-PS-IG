@@ -44,7 +44,7 @@ menu:
     Requirements: Requirements-PatientSummary.html
 
   Specification:
-    Logical Model: StructureDefinition-PatientSummary.html
+    Logical Model: StructureDefinition-LogicalModelPatientSummary.html
     FHIR Profile: StructureDefinition-nl-PatientSummary.html
     Dependencies: dependencies.html   
 
@@ -57,4 +57,5 @@ instanceOptions:
   
 dependencies:
   hl7.fhir.uv.xver-r5.r4: 0.1.0
-  #nictiz.nl.gbb: current$_generated_NICTIZ-43876
+  nictiz.nl.gbb: 1.0.0-alpha.1
+  hl7.fhir.eu.eps: 1.0.0-ballot
