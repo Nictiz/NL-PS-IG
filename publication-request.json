@@ -1,0 +1,17 @@
+{
+   "package-id" : "nictiz.nl.nlps",
+   "version" : "1.0.0-alpha.1",
+   "path" : "http://ig.nictiz.nl/nlps/1.0.0-alpha.1",
+   "mode" : "milestone",
+   "status" : "release",
+   "sequence" : "1.0.0",
+   "desc" : "Initial release",
+   "first" : true,
+   "title" : "Patient Summary IG NL",
+   "ci-build" : "http://build.fhir.org/ig/Nictiz/NL-PS-IG",
+   "registry-description" : "Dutch Patient Summary. EHDS First, completed with Dutch additions",
+   "registry-country" : "nl",
+   "registry-authority" : "Nictiz",
+   "category" : "National Base",
+   "introduction" : "This FHIR IG contains the Dutch Patient Summary built from EHDS compliant generic building blocks. This Patient Summary has Dutch additional specifications but is EHDS first."
+}
