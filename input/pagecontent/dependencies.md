@@ -1,0 +1,1 @@
+{% include dependency-table-short.xhtml %}
