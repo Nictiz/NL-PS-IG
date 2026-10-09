@@ -4,41 +4,32 @@ msgstr ""
 msgid "Home"
 msgstr ""
 
-msgid "Background"
-msgstr ""
+msgid "Functioneel ontwerp"
+msgstr "Functional design"
 
-msgid "Functional Design"
-msgstr ""
-
-msgid "Technical Design"
-msgstr ""
+msgid "Technisch ontwerp"
+msgstr "Technical design"
 
 msgid "Requirements"
 msgstr ""
 
-msgid "Overview"
-msgstr ""
+msgid "Overzicht"
+msgstr "Overview"
 
 msgid "Requirements"
 msgstr ""
 
-msgid "Specification"
-msgstr ""
+msgid "Specificatie"
+msgstr "Specification"
 
-msgid "Logical Model"
-msgstr ""
+msgid "Logisch model"
+msgstr "Logical model"
 
-msgid "FHIR Profile"
-msgstr ""
+msgid "FHIR-profiel"
+msgstr "FHIR profile"
 
-msgid "Dependencies"
-msgstr ""
+msgid "Afhankelijkheden"
+msgstr "Dependencies"
 
-msgid "Testing"
-msgstr ""
-
-msgid "Validation"
-msgstr ""
-
-msgid "Artefacts"
-msgstr ""
+msgid "Artefacten"
+msgstr "Artifacts"

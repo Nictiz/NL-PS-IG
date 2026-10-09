@@ -35,22 +35,19 @@ parameters:
 
 menu:
   Home: index.html
-  Background: background.html
-  Functional Design: functional-design.html
-  Technical Design: technical-design.html
+  Functioneel ontwerp: functional-design.html
+  Technisch ontwerp: technical-design.html
 
   Requirements:
-    Overview: PatientSummary.html
+    Overzicht: PatientSummary.html
     Requirements: Requirements-PatientSummary.html
 
-  Specification:
-    Logical Model: StructureDefinition-LogicalModelPatientSummary.html
-    FHIR Profile: StructureDefinition-nl-PatientSummary.html
-    Dependencies: dependencies.html   
+  Specificatie:
+    Logisch model: StructureDefinition-LogicalModelPatientSummary.html
+    FHIR-profiel: StructureDefinition-nl-PatientSummary.html
+    Afhankelijkheden: dependencies.html   
 
-  Testing: testing.html
-  Validation: validation.html
-  Artefacts: artifacts.html
+  Artefacten: artifacts.html
 
 instanceOptions:
   manualSliceOrdering: true
