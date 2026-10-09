@@ -4,6 +4,8 @@ const fs = require("fs");
 const path = require("path");
 const commander = require("commander");
 
+const serverSourceUrl = "https://decor.nictiz.nl";
+//const serverSourceUrl = "http://localhost:8877/exist/apps";
 const translationExtensionUrl = "http://hl7.org/fhir/StructureDefinition/translation";
 
 function normalizeLanguageCode(languageCode) {
@@ -44,6 +46,7 @@ function normalizeTranslationExtensionLanguages(value) {
 
 class TargetFolders {
   static subfolders = {
+    "ActorDefinitions":     "logicalmodels",
     "RequirementResources": "requirements",
     "PageContent":          "pagecontent",
     "LogicalModels":        "logicalmodels",
@@ -142,6 +145,7 @@ class ActorDefinitionDownloader {
 }
 
 class ValueSetDownloader {
+  static searchUrl = "https://decor.nictiz.nl/fhir/4.0/nl-ps-/ValueSet";
   static skippedCanonicalPrefixes = [
     "http://hl7.org",
     "http://terminology.hl7.org"
@@ -193,7 +197,17 @@ class ValueSetDownloader {
         throw new Error(`HTTP ${response.status} ${response.statusText}`);
       }
 
-      const valueSet = await response.json();
+      const bundle = await response.json();
+      if (bundle.resourceType != "Bundle") {
+        throw new Error(`Expected Bundle, got ${bundle.resourceType ?? "unknown resource"}`);
+      }
+      if (bundle.total < 1) {
+        console.warn(`Couldn't download ValueSet ${canonical}`);
+        return;
+      } else if (bundle.total > 1) {
+        console.warn(`Multiple ValueSets are present with canonical ${canonical}. Downloading the first one.`);
+      }
+      const valueSet = bundle.entry[0].resource;
       if (valueSet.resourceType != "ValueSet") {
         throw new Error(`Expected ValueSet, got ${valueSet.resourceType ?? "unknown resource"}`);
       }
@@ -246,8 +260,10 @@ class ValueSetDownloader {
 
   #toDownloadUrl(canonical) {
     const resourceUrl = new URL(canonical.split("|")[0]);
-    resourceUrl.searchParams.set("_format", "json");
-    return resourceUrl.toString();
+    const searchUrl = new URL(ValueSetDownloader.searchUrl);
+    searchUrl.searchParams.set("url", resourceUrl);
+    searchUrl.searchParams.set("_format", "json");
+    return searchUrl.toString();
   }
 
   #fallbackName(canonical) {
@@ -275,7 +291,7 @@ class ExcelConvertor {
   
   static textADId          = "ART-DECOR-id";
 
-  static adProjectUrl      = "https://decor.nictiz.nl/fhir/4.0/nl-ps-/StructureDefinition";
+  static adProjectUrl      = serverSourceUrl + "/fhir/4.0/nl-ps-/StructureDefinition";
 
   constructor(inputFile, targetFolders, valueSetDownloader) {
     this.inputFile = inputFile;
@@ -334,7 +350,7 @@ class ExcelConvertor {
               }
             ],
             key: number,
-            label: label,
+            label: label.trim(),
             requirement: requirementText || "(geen requirementtekst)"
           };
 
@@ -384,12 +400,13 @@ class ExcelConvertor {
       return;
     } 
     
+    const id_parts = ad_id.split("/");
+    const id_date = id_parts[1].replace(/-/g, "").replace(/:/g, "").replace("T", "");
+    const fetch_url = `${ExcelConvertor.adProjectUrl}/${id_parts[0]}--${id_date}?_format=json&language=en-US`;
     try {
-      const id_parts = ad_id.split("/");
-      const id_date = id_parts[1].replace(/-/g, "").replace(/:/g, "").replace("T", "");
-      const response = await fetch(`${ExcelConvertor.adProjectUrl}/${id_parts[0]}--${id_date}?_format=json&language=en-US`);
+      const response = await fetch(`${fetch_url}`);
       if (!response.ok) {
-        throw new Error(`HTTP ${response.status} ${response.statusText}`);
+        throw new Error(`HTTP ${response.status} ${response.statusText} - ${ExcelConvertor.adProjectUrl}/${id_parts[0]}--${id_date}?_format=json`);
       }
 
       const body = await response.json();
@@ -403,7 +420,7 @@ class ExcelConvertor {
         await this.valueSetDownloader.downloadAll(this.#getBindingValueSetCanonicals(body));
       }
     } catch (error) {
-      console.warn(`Couldn't download logical model for ${this.inputFile.name} from ART-DECOR, "${error.message}"`);
+      console.warn(`Couldn't download logical model for ${this.inputFile.name} from ART-DECOR using ${fetch_url}, "${error.message}"`);
       return;
     }
   }
