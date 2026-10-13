@@ -58,3 +58,6 @@ dependencies:
   hl7.fhir.uv.xver-r5.r4: 0.1.0
   nictiz.nl.gbb: 1.0.0-alpha.1
   hl7.fhir.eu.eps: 1.0.0-ballot
+
+nictizIgConfig:
+  ad-project: nl-ps-
