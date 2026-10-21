@@ -1,0 +1,10 @@
+{
+  "resourceType" : "Requirements",
+  "id" : "fromNarrative",
+  "url" : "http://ig.nictiz.nl/nlps/Requirements/fromNarrative",
+  "name" : "FromNarrative",
+  "title" : "Narratief conformance statements",
+  "status" : "active",
+  "experimental" : false,
+  "description" : "Conformance-uitspraken gevonden in het narratief van de IG geconsolideerd in deze gestructureerde resource voor traceerbaarheid"
+}
