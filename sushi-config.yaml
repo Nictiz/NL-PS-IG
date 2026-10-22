@@ -4,7 +4,7 @@ name: PatientSummary
 title: PatientSummary IG NL
 description: This FHIR IG contains the Dutch Patient Summary built from EHDS compliant generic building blocks. This Patient Summary has Dutch additional specifications but is EHDS first.
 status: draft
-version: 1.0.0-alpha.1
+version: 1.0.0-alpha.2
 fhirVersion: 4.0.1
 copyrightYear: 2026+
 releaseLabel: Alpha
@@ -56,7 +56,7 @@ instanceOptions:
   
 dependencies:
   hl7.fhir.uv.xver-r5.r4: 0.1.0
-  nictiz.nl.gbb: 1.0.0-alpha.1
+  nictiz.nl.gbb: 1.0.0-alpha.2
   hl7.fhir.eu.eps: 1.0.0-ballot
 
 nictizIgConfig:
