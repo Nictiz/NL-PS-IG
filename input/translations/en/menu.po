@@ -33,3 +33,9 @@ msgstr "Dependencies"
 
 msgid "Artefacten"
 msgstr "Artifacts"
+
+msgid "Testing"
+msgstr ""
+
+msgid "Plugathon November 2026"
+msgstr ""
