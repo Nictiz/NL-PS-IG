@@ -1,0 +1,184 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "nictiz.nl.nlps",
+  "url": "http://ig.nictiz.nl/nlps/ImplementationGuide/nictiz.nl.nlps",
+  "version": "1.0.0-alpha.1",
+  "name": "PatientSummary",
+  "title": "PatientSummary IG NL",
+  "status": "draft",
+  "publisher": "Nictiz",
+  "contact": [
+    {
+      "name": "Nictiz",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://nictiz.nl"
+        }
+      ]
+    }
+  ],
+  "description": "This FHIR IG contains the Dutch Patient Summary built from EHDS compliant generic building blocks. This Patient Summary has Dutch additional specifications but is EHDS first.",
+  "packageId": "nictiz.nl.nlps",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "hl7.fhir.uv.xver-r5.r4",
+      "version": "0.1.0",
+      "uri": "http://hl7.org/fhir/uv/xver/ImplementationGuide/hl7.fhir.uv.xver-r5.r4",
+      "id": "hl7_fhir_uv_xver_r5_r4"
+    },
+    {
+      "packageId": "nictiz.nl.gbb",
+      "version": "1.0.0-alpha.1",
+      "uri": "http://ig.nictiz.nl/gbb/ImplementationGuide/nictiz.nl.gbb",
+      "id": "nictiz_nl_gbb"
+    },
+    {
+      "packageId": "hl7.fhir.eu.eps",
+      "version": "1.0.0-ballot",
+      "uri": "http://hl7.eu/fhir/eps/ImplementationGuide/hl7.fhir.eu.eps",
+      "id": "hl7_fhir_eu_eps"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/nl-PatientSummary"
+        },
+        "description": "This profile defines how the Composition resource is used to represent a Dutch Patient Summary.",
+        "exampleBoolean": false,
+        "name": "nl PatientSummary"
+      },
+      {
+        "reference": {
+          "reference": "ActorDefinition/NlPsExchangingSystem"
+        },
+        "description": "Systeem dat gegevens ontsluit aan derden",
+        "exampleBoolean": false,
+        "name": "OntsluitendSysteem"
+      },
+      {
+        "reference": {
+          "reference": "Requirements/PatientSummary"
+        },
+        "exampleBoolean": false,
+        "name": "PatientSummary"
+      },
+      {
+        "reference": {
+          "reference": "ActorDefinition/NlPsRegistrationSystem"
+        },
+        "description": "Bronsysteem voor de registratie",
+        "exampleBoolean": false,
+        "name": "RegistrerendSysteem"
+      },
+      {
+        "reference": {
+          "reference": "ActorDefinition/NlPsConsumingSystem"
+        },
+        "description": "Systeem dat gegevens van derden verwerkt",
+        "exampleBoolean": false,
+        "name": "VerwerkendSysteem"
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "dependencies.html",
+          "title": "Dependencies",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "functional-design.html",
+          "title": "Functional Design",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "obligations.html",
+          "title": "Obligations",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "PatientSummary.html",
+          "title": "Patient Summary",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "technical-design.html",
+          "title": "Technical Design",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2026+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "Alpha"
+      },
+      {
+        "code": "excludettl",
+        "value": "true"
+      },
+      {
+        "code": "path-resource",
+        "value": "generated/requirements"
+      },
+      {
+        "code": "path-resource",
+        "value": "generated/logicalmodels"
+      },
+      {
+        "code": "path-resource",
+        "value": "generated/vocabulary"
+      },
+      {
+        "code": "path-resource",
+        "value": "generated/resources"
+      },
+      {
+        "code": "path-pages",
+        "value": "generated/pagecontent"
+      },
+      {
+        "code": "i18n-default-lang",
+        "value": "nl"
+      },
+      {
+        "code": "i18n-lang",
+        "value": "en"
+      },
+      {
+        "code": "translation-sources",
+        "value": "input/translations/en"
+      },
+      {
+        "code": "translation-sources",
+        "value": "input/translations/nl"
+      },
+      {
+        "code": "logging",
+        "value": "progress"
+      },
+      {
+        "code": "path-liquid-template",
+        "value": "template/liquid"
+      }
+    ]
+  }
+}
