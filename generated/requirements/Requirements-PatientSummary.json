@@ -1,0 +1,969 @@
+{
+  "resourceType": "Requirements",
+  "id": "PatientSummary",
+  "language": "nl",
+  "url": "http://ig.nictiz.nl/nlps/Requirements/PatientSummary",
+  "status": "active",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-001",
+      "label": "Header",
+      "requirement": "* *Omschrijving*: Document header, containing the basic metadata for this NL-PS.\n* *Variabiliteit*: sectie/hoofdstuk aanduiding die de metadata bevat\n* *Aanwezigheid*: 1..1",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 Document"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-002",
+      "label": "subject",
+      "requirement": "* *Omschrijving*: Patient/subject information\n* *Variabiliteit*: (reference Patient)\n* *Aanwezigheid*: 1..1",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 Document"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-003",
+      "label": "identifier",
+      "requirement": "* *Omschrijving*: Unique identifier of the document\n* *Variabiliteit*: (identifier)\n* *Aanwezigheid*: 1..1",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 Document"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-004",
+      "label": "author",
+      "requirement": "* *Omschrijving*: Author(s) of the document\n* *Variabiliteit*: (reference PractitionerRole, Practitioner, Organization, Device)\n* *Aanwezigheid*: 1..*",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 Document"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-005",
+      "label": "date",
+      "requirement": "* *Omschrijving*: Date of finalizing/issuing the document\n* *Variabiliteit*: (dateTime)\n* *Aanwezigheid*: 1..1",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 Document"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-006",
+      "label": "status",
+      "requirement": "* *Omschrijving*: Status of the document\n* *Variabiliteit*: (coding)\n* *Aanwezigheid*: 1..1",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 Document"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-007",
+      "label": "language",
+      "requirement": "* *Omschrijving*: Language in which the resource is written. Language is expressed by the IETF language tag.\n* *Variabiliteit*: (coding) Binding Description: (preferred): BCP 47\n* *Aanwezigheid*: 0..1",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 Document"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-008",
+      "label": "type",
+      "requirement": "* *Omschrijving*: Type of document at hand, in this case always 60591-5 Patient summary document.\n* *Variabiliteit*: (coding) fixed value: \"60591-5\" (LOINC)\n* *Aanwezigheid*: 1..1",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 EHDSPatientSummary"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-009",
+      "label": "title",
+      "requirement": "* *Omschrijving*: Human readable document title that can be displayed in search results, etc. This can be documentType's display name, or it can be assembled from multiple elements. Examples: 'Patient Summary of Jane Green 10.12.2024'\n* *Variabiliteit*: (string) Alleen Patient Summary of een vertaling daarvan\n* *Aanwezigheid*: 1..1",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 EHDSPatientSummary"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-010",
+      "label": "period",
+      "requirement": "* *Omschrijving*: Time period of information covered in the document\n* *Variabiliteit*: (dateTime)\n* *Aanwezigheid*: 0..1",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 EHDSPatientSummary"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-011",
+      "label": "version",
+      "requirement": "* *Omschrijving*: Business version of the document. The exact algorithm for versioning is decided by the producer/custodian\n* *Variabiliteit*: (string)\n* *Aanwezigheid*: 0..1",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 Document"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-012",
+      "label": "attestation",
+      "requirement": "* *Omschrijving*: Document attestation details\n* *Variabiliteit*: bestaat altijd uit een attester, datum en mode\n* *Aanwezigheid*: 0..* mag afwezig zijn, mag vaker voorkomen.",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 Document"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-013",
+      "label": "attester[x]",
+      "requirement": "* *Omschrijving*: Actor who validated the document\n* *Variabiliteit*: (reference PractitionerRole, Practitioner, Device)\n* *Aanwezigheid*: per authenticatie 1..1 vullen. als Attestion aanwezig, dan moet dit element ook aanwezig zijn",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 Document"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-014",
+      "label": "mode of attestation",
+      "requirement": "* *Omschrijving*: Indicates the level of authority of the attestation. The type of attestation the authenticator offers.\n* *Variabiliteit*: (coded) https://hl7.org/fhir/R4/valueset-composition-attestation-mode.html\n* *Aanwezigheid*: per authenticatie 1..1 vullen. als Attestion aanwezig, dan moet dit element ook aanwezig zijn",
+      "source": [
+        {
+          "display": "Base FHIR R4"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-015",
+      "label": "dateTime of attestation",
+      "requirement": "* *Omschrijving*: Date and time of the approval of the document by Attester\n* *Variabiliteit*: (dateTime)\n* *Aanwezigheid*: per authenticatie 1..1 vullen. als Attestion aanwezig, dan moet dit element ook aanwezig zijn",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 Document"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-016",
+      "label": "legalAuthentication",
+      "requirement": "* *Omschrijving*: Document legal authentication details\n* *Variabiliteit*: bestaat altijd uit een legalAuthenticator, datum en mode\n* *Aanwezigheid*: 0..* mag afwezig zijn, mag vaker voorkomen.",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 Document"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-017",
+      "label": "legalAuthenticator",
+      "requirement": "* *Omschrijving*: The person or organisation taking responsibility for the content of the document.\n* *Variabiliteit*: (reference PractitionerRole, Practitioner, Organization)\n* *Aanwezigheid*: per authenticatie 1..1 vullen. als legalAuthentication aanwezig, dan moet dit element ook aanwezig zijn",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 Document"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-018",
+      "label": "dateTime of legal authentication",
+      "requirement": "* *Omschrijving*: Date and time when the document was authorised\n* *Variabiliteit*: (dateTime)\n* *Aanwezigheid*: per authenticatie 1..1 vullen. als legalAuthentication aanwezig, dan moet dit element ook aanwezig zijn",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 Document"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-019",
+      "label": "mode of legal authentication",
+      "requirement": "* *Omschrijving*: Indicates the level of authority of the attestation. The type of attestation the authenticator offers.\n* *Variabiliteit*: (coded) https://hl7.org/fhir/R4/valueset-composition-attestation-mode.html met required Pattern: legal\n* *Aanwezigheid*: per authenticatie 1..1 vullen. als legalAuthentication aanwezig, dan moet dit element ook aanwezig zijn",
+      "source": [
+        {
+          "display": "Base FHIR R4"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-020",
+      "label": "eventType",
+      "requirement": "* *Omschrijving*: Categorisation of the event covered by the document (e.g. laboratory study types, imaging study types including modality, etc.). Selection of such tags or labels depends on the use case and agreement between data sharing parties. This meta-data element serves primarily for searching and filtering purposes.\n* *Variabiliteit*: (coding) \r\nBinding Description: (preferred): LOINC, SNOMED CT, dicom-cid-33-Modality\n* *Aanwezigheid*: 0..*",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 Document"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-021",
+      "label": "ServiceSpecialty",
+      "requirement": "* *Omschrijving*: Additional details about where the content was created (e.g. clinical specialty)\n* *Variabiliteit*: (coding)\r\nBinding Description: (preferred) SNOMED CT\n* *Aanwezigheid*: 0..*",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 Document"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-022",
+      "label": "custodian",
+      "requirement": "* *Omschrijving*: Organisation that is in charge of maintaining the document/report.\n* *Variabiliteit*: (reference Organization)\n* *Aanwezigheid*: 0..1",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 Document"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-023",
+      "label": "presentedForm",
+      "requirement": "* *Omschrijving*: A narrative easy-to-read representation of the full data set, e.g. PDF-version of a document\n* *Variabiliteit*: (reference Attachment)\n* *Aanwezigheid*: 0..1\r\nIn EHDS is de conceptmapping \"no-map\" naar composition en alleen in Diagnostic report resource mag het voorkomen. Ook in de PS conceptmap is deze afwezig",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 Document"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-024",
+      "label": "allergiesAndIntolerances",
+      "requirement": "* *Omschrijving*: Section: Allergies and Intolerances. Human readable denominator to identify the topic of this section.\n* *Variabiliteit*: HumanReadable (Text), Machine readable (code)\n* *Aanwezigheid*: 1..1",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 EHDSPatientSummary"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-025",
+      "label": "generatedNarrative",
+      "requirement": "* *Omschrijving*: Narrative, potentially formatted, content of the whole section. Must be automatically generated only; manually written narratives are not allowed. Use the healthcare provider's free-text note for that purpose.\n* *Variabiliteit*: Narrative (Text)\n* *Aanwezigheid*: 0..1\r\nConditie in samenhang met entry. een van de twee moet aanwezig zijn",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 EHDSPatientSummary"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-026",
+      "label": "Entry.AllergyIntolerance",
+      "requirement": "* *Omschrijving*: List of structured allergies and intolerances\n* *Variabiliteit*: (reference EHDSAllergyIntolerance)\n* *Aanwezigheid*: 0..* \r\nA section SHALL at least have an emptyReason or entry (ips-comp-1)\r\n\r\nA section SHALL NOT have an emptyReason and entry at the same time. (cmp-2)\r\n\r\nA section SHALL at least have an generatedNarrative or entry (cmp-1)",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 EHDSPatientSummary"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-027",
+      "label": "emptyReason",
+      "requirement": "* *Omschrijving*: Use if no Allergies are listed\n* *Variabiliteit*: (coding) ListEmptyReasons http://hl7.org/fhir/R4/valueset-list-empty-reason.html\n* *Aanwezigheid*: 0..1\r\nA section SHALL at least have an emptyReason or entry (ips-comp-1)\r\n\r\nA section SHALL NOT have an emptyReason and entry at the same time. (cmp-2)",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 EHDSPatientSummary"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-028",
+      "label": "emptyReason",
+      "requirement": "* *Omschrijving*: Reason for absence of data: indicates whether the person is known to have no allergies\n* *Variabiliteit*: (coding) ListEmptyReasons http://hl7.org/fhir/R4/valueset-list-empty-reason.html\n* *Aanwezigheid*: in case if the person is known to have no allergies",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 EHDSPatientSummary"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-029",
+      "label": "emptyReason",
+      "requirement": "* *Omschrijving*: Reason for absence of data: the data is considered incomplete\n* *Variabiliteit*: (coding) ListEmptyReasons http://hl7.org/fhir/R4/valueset-list-empty-reason.html\n* *Aanwezigheid*: in case if the data is considered incomplete",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 EHDSPatientSummary"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-030",
+      "label": "note",
+      "requirement": "* *Omschrijving*: Free text notes by the health professional\n* *Variabiliteit*: (string)\n* *Aanwezigheid*: 0..1",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 EHDSPatientSummary"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-031",
+      "label": "code",
+      "requirement": "* *Omschrijving*: Classification of section (recommended). Classification of a section of a composition/document.\n* *Variabiliteit*: Binding: DocumentSectionCodes (example)\r\nfixed value: LOINC 48765-2\n* *Aanwezigheid*: 1..1",
+      "source": [
+        {
+          "display": "EPS Composition + IPS Composition"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-032",
+      "label": "title",
+      "requirement": "* *Omschrijving*: The label for this particular section. This will be part of the rendered content for the document, and is often used to build a table of contents.\n* *Variabiliteit*: Title (Text)\n* *Aanwezigheid*: 1..1",
+      "source": [
+        {
+          "display": "EPS Composition + IPS Composition"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-033",
+      "label": "problems",
+      "requirement": "* *Omschrijving*: Section: Problems. Human readable denominator to identify the topic of this section.\n* *Variabiliteit*: HumanReadable (Text), Machine readable (code)\n* *Aanwezigheid*: 1..1",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 EHDSPatientSummary"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-034",
+      "label": "generatedNarrative",
+      "requirement": "* *Omschrijving*: Narrative, potentially formatted, content of the whole section. Must be automatically generated only; manually written narratives are not allowed. Use the healthcare provider's free-text note for that purpose.\n* *Variabiliteit*: Narrative (Text)\n* *Aanwezigheid*: 0..1\r\nConditie in samenhang met entry. een van de twee moet aanwezig zijn",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 EHDSPatientSummary"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-035",
+      "label": "problem",
+      "requirement": "* *Omschrijving*: Health conditions affecting the health of the patient.\n* *Variabiliteit*: (reference EHDSCondition)\n* *Aanwezigheid*: 0..* \r\nA section SHALL at least have an emptyReason or entry (ips-comp-1)\r\n\r\nA section SHALL NOT have an emptyReason and entry at the same time. (cmp-2)\r\n\r\nA section SHALL at least have an generatedNarrative or entry (cmp-1)",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 EHDSPatientSummary"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-036",
+      "label": "emptyReason",
+      "requirement": "* *Omschrijving*: Use if no conditions are listed\n* *Variabiliteit*: (coding) ListEmptyReasons http://hl7.org/fhir/R4/valueset-list-empty-reason.html\n* *Aanwezigheid*: 0..1\r\nA section SHALL at least have an emptyReason or entry (ips-comp-1)\r\n\r\nA section SHALL NOT have an emptyReason and entry at the same time. (cmp-2)",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 EHDSPatientSummary"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-037",
+      "label": "note",
+      "requirement": "* *Omschrijving*: Free text notes by the health professional\n* *Variabiliteit*: (string)\n* *Aanwezigheid*: 0..1",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 EHDSPatientSummary"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-038",
+      "label": "code",
+      "requirement": "* *Omschrijving*: Classification of section (recommended). Classification of a section of a composition/document.\n* *Variabiliteit*: Binding: DocumentSectionCodes (example)\r\nfixed value: LOINC 11450-4\n* *Aanwezigheid*: 1..1",
+      "source": [
+        {
+          "display": "EPS Composition + IPS Composition"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-039",
+      "label": "title",
+      "requirement": "* *Omschrijving*: The label for this particular section. This will be part of the rendered content for the document, and is often used to build a table of contents.\n* *Variabiliteit*: Title (Text)\n* *Aanwezigheid*: 1..1",
+      "source": [
+        {
+          "display": "EPS Composition + IPS Composition"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-040",
+      "label": "medicationSummary",
+      "requirement": "* *Omschrijving*: Section: Medication Summary. Human readable denominator to identify the topic of this section.\n* *Variabiliteit*: HumanReadable (Text), Machine readable (code)\n* *Aanwezigheid*: 1..1",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 EHDSPatientSummary"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-041",
+      "label": "generatedNarrative",
+      "requirement": "* *Omschrijving*: Narrative, potentially formatted, content of the whole section. Must be automatically generated only; manually written narratives are not allowed. Use the healthcare provider's free-text note for that purpose.\n* *Variabiliteit*: Narrative (Text)\n* *Aanwezigheid*: 0..1\r\nConditie in samenhang met entry. een van de twee moet aanwezig zijn",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 EHDSPatientSummary"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-042",
+      "label": "medicationUse",
+      "requirement": "* *Omschrijving*: Medication treatment/prescription relevant for this patient summary. Typically, medications whose period of time indicated for the treatment has not yet expired whether it has been dispensed or not.\n* *Variabiliteit*: (reference EHDSMedicationUse) MP9 blok\n* *Aanwezigheid*: 0..* \r\nA section SHALL at least have an emptyReason or entry (ips-comp-1)\r\n\r\nA section SHALL NOT have an emptyReason and entry at the same time. (cmp-2)\r\n\r\nA section SHALL at least have an generatedNarrative or entry (cmp-1)",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 EHDSPatientSummary"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-043",
+      "label": "emptyReason",
+      "requirement": "* *Omschrijving*: Use if no medicines are listed\n* *Variabiliteit*: (coding) ListEmptyReasons http://hl7.org/fhir/R4/valueset-list-empty-reason.html\n* *Aanwezigheid*: 0..1\r\nA section SHALL at least have an emptyReason or entry (ips-comp-1)\r\n\r\nA section SHALL NOT have an emptyReason and entry at the same time. (cmp-2)",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 EHDSPatientSummary"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-044",
+      "label": "note",
+      "requirement": "* *Omschrijving*: Free text notes by the health professional\n* *Variabiliteit*: (string)\n* *Aanwezigheid*: 0..1",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 EHDSPatientSummary"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-045",
+      "label": "code",
+      "requirement": "* *Omschrijving*: Classification of section (recommended). Classification of a section of a composition/document.\n* *Variabiliteit*: Binding: DocumentSectionCodes (example)\r\nfixed value: LOINC 10160-0\n* *Aanwezigheid*: 1..1",
+      "source": [
+        {
+          "display": "EPS Composition + IPS Composition"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-046",
+      "label": "title",
+      "requirement": "* *Omschrijving*: The label for this particular section. This will be part of the rendered content for the document, and is often used to build a table of contents.\n* *Variabiliteit*: Title (Text)\n* *Aanwezigheid*: 1..1",
+      "source": [
+        {
+          "display": "EPS Composition + IPS Composition"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-047",
+      "label": "medicalDevicesAndImplants",
+      "requirement": "* *Omschrijving*: Section: Medical devices and implants. Human readable denominator to identify the topic of this section.\n* *Variabiliteit*: HumanReadable (Text), Machine readable (code)\n* *Aanwezigheid*: 1..1",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 EHDSPatientSummary"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-048",
+      "label": "generatedNarrative",
+      "requirement": "* *Omschrijving*: Narrative, potentially formatted, content of the whole section. Must be automatically generated only; manually written narratives are not allowed. Use the healthcare provider's free-text note for that purpose.\n* *Variabiliteit*: Narrative (Text)\n* *Aanwezigheid*: 0..1\r\nConditie in samenhang met entry. een van de twee moet aanwezig zijn",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 EHDSPatientSummary"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-049",
+      "label": "deviceUse",
+      "requirement": "* *Omschrijving*: Describes the patient's implanted and external medical devices and equipment that their health status depends on. Includes devices (such as cardiac pacemakers, implantable defibrillator, prothesis, ferromagnetic bone implants etc.) that are important to know by the HP.\n* *Variabiliteit*: (reference EHDSDeviceUse)\n* *Aanwezigheid*: 0..* \r\nA section SHALL at least have an emptyReason or entry (ips-comp-1)\r\n\r\nA section SHALL NOT have an emptyReason and entry at the same time. (cmp-2)\r\n\r\nA section SHALL at least have an generatedNarrative or entry (cmp-1)",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 EHDSPatientSummary"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-050",
+      "label": "emptyReason",
+      "requirement": "* *Omschrijving*: Use if no medical devices or implants are listed\n* *Variabiliteit*: (coding) ListEmptyReasons http://hl7.org/fhir/R4/valueset-list-empty-reason.html\n* *Aanwezigheid*: 0..1\r\nA section SHALL at least have an emptyReason or entry (ips-comp-1)\r\n\r\nA section SHALL NOT have an emptyReason and entry at the same time. (cmp-2)",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 EHDSPatientSummary"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-051",
+      "label": "note",
+      "requirement": "* *Omschrijving*: Free text notes by the health professional\n* *Variabiliteit*: (string)\n* *Aanwezigheid*: 0..1",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 EHDSPatientSummary"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-052",
+      "label": "code",
+      "requirement": "* *Omschrijving*: Classification of section (recommended). Classification of a section of a composition/document.\n* *Variabiliteit*: Binding: DocumentSectionCodes (example)\r\nfixed value: LOINC 46264-8\n* *Aanwezigheid*: 1..1",
+      "source": [
+        {
+          "display": "EPS Composition + IPS Composition"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-053",
+      "label": "title",
+      "requirement": "* *Omschrijving*: The label for this particular section. This will be part of the rendered content for the document, and is often used to build a table of contents.\n* *Variabiliteit*: Title (Text)\n* *Aanwezigheid*: 1..1",
+      "source": [
+        {
+          "display": "EPS Composition + IPS Composition"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-054",
+      "label": "Procedures",
+      "requirement": "* *Omschrijving*: Section: Procedures. Human readable denominator to identify the topic of this section.\n* *Variabiliteit*: HumanReadable (Text), Machine readable (code)\n* *Aanwezigheid*: 1..1",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 EHDSPatientSummary"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-055",
+      "label": "generatedNarrative",
+      "requirement": "* *Omschrijving*: Narrative, potentially formatted, content of the whole section. Must be automatically generated only; manually written narratives are not allowed. Use the healthcare provider's free-text note for that purpose.\n* *Variabiliteit*: Narrative (Text+code)\n* *Aanwezigheid*: 0..1\r\nConditie in samenhang met entry. een van de twee moet aanwezig zijn",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 EHDSPatientSummary"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-056",
+      "label": "procedure",
+      "requirement": "* *Omschrijving*: List of structured procedures\n* *Variabiliteit*: (reference EHDSProcedure)\n* *Aanwezigheid*: 0..* \r\nA section SHALL at least have an emptyReason or entry (ips-comp-1)\r\n\r\nA section SHALL NOT have an emptyReason and entry at the same time. (cmp-2)\r\n\r\nA section SHALL at least have an generatedNarrative or entry (cmp-1)",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 EHDSPatientSummary"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-057",
+      "label": "emptyReason",
+      "requirement": "* *Omschrijving*: Use if no procedures are listed\n* *Variabiliteit*: (coding) ListEmptyReasons http://hl7.org/fhir/R4/valueset-list-empty-reason.html\n* *Aanwezigheid*: 0..1\r\nA section SHALL at least have an emptyReason or entry (ips-comp-1)\r\n\r\nA section SHALL NOT have an emptyReason and entry at the same time. (cmp-2)",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 EHDSPatientSummary"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-058",
+      "label": "note",
+      "requirement": "* *Omschrijving*: Free text notes by the health professional\n* *Variabiliteit*: (string)\n* *Aanwezigheid*: 0..1",
+      "source": [
+        {
+          "display": "Xt-EHR LIM 1.0.0 EHDSPatientSummary"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-059",
+      "label": "code",
+      "requirement": "* *Omschrijving*: Classification of section (recommended). Classification of a section of a composition/document.\n* *Variabiliteit*: Binding: DocumentSectionCodes (example)\r\nfixed value: LOINC 47519-4\n* *Aanwezigheid*: 1..1",
+      "source": [
+        {
+          "display": "EPS Composition + IPS Composition"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/tools/StructureDefinition/requirements-statementshallnot",
+          "valueBoolean": false
+        }
+      ],
+      "key": "NLPS-060",
+      "label": "title",
+      "requirement": "* *Omschrijving*: The label for this particular section. This will be part of the rendered content for the document, and is often used to build a table of contents.\n* *Variabiliteit*: Title (Text)\n* *Aanwezigheid*: 1..1",
+      "source": [
+        {
+          "display": "EPS Composition + IPS Composition"
+        }
+      ]
+    }
+  ]
+}
