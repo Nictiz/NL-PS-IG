@@ -2,7 +2,7 @@
 
 This FHIR IG contains the Dutch Patient Summary. This Patient Summary has Dutch additional specifications but is EHDS first.
 
-### Known Issue
+### Known issues
 * [Missing datatype for NLPSComposition.Period in the agreement model](http://nictiz.atlassian.net/browse/PS-6)
 * [Missing types and content-reference in NLPSComposition.MedicationSummary.entry](http://nictiz.atlassian.net/browse/PS-7)
 * [Functional design: Refine practical scenarios](http://nictiz.atlassian.net/browse/PS-8)
