@@ -8,3 +8,7 @@ This FHIR IG contains the Dutch Patient Summary. This Patient Summary has Dutch 
 * [Functional design: Refine practical scenarios](http://nictiz.atlassian.net/browse/PS-8)
 * [Add obligations](http://nictiz.atlassian.net/browse/PS-9)
 * [Move dependencies to the homepage](http://nictiz.atlassian.net/browse/PS-10)
+
+### Release notes version 1.0.0-alpha.2
+
+* [PS-5 - In the logical model the valueset v3 Code System ActCode is added as main binding (example) on EventType.](http://nictiz.atlassian.net/browse/PS-5)
