@@ -48,8 +48,11 @@ menu:
     Logisch model: StructureDefinition-LogicalModelPatientSummary.html
     FHIR-profiel: StructureDefinition-nl-PatientSummary.html
     Afhankelijkheden: dependencies.html   
-
+  
   Artefacten: artifacts.html
+
+  Testing: 
+    Plugathon November 2026: plugathon-november-2026.html
 
 instanceOptions:
   manualSliceOrdering: true
