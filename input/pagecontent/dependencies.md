@@ -1,1 +1,1 @@
-{% include dependency-table-short.xhtml %}
+{% include dependency-table-nontech.xhtml %}
