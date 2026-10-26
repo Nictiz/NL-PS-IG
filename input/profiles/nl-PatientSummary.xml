@@ -652,7 +652,7 @@
         <code value="Reference" />
         <targetProfile value="http://ig.nictiz.nl/gbb/StructureDefinition/nl-core-Practitioner" />
         <targetProfile value="http://ig.nictiz.nl/gbb/StructureDefinition/nl-core-PractitionerRole" />
-        <targetProfile value="http://ig.nictiz.nl/gbb/StructureDefinition/nl-core-Device" />
+        <!--<targetProfile value="http://ig.nictiz.nl/gbb/StructureDefinition/nl-core-Device" />-->
       </type>
       <mustSupport value="true" />
       <mapping>
