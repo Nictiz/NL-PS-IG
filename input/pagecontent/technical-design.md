@@ -1,6 +1,6 @@
 ### Inleiding
 
-Dit ontwerp beschrijft de uitwisselingtechnieken van de NL-PS. De functionele scope en rolverdeling staan in het [functionele ontwerp][fo]. Aansluitvoorwaarden voor identificatie, autorisatie en adressering volgen uit de gebruikte infrastructuur.
+Dit ontwerp beschrijft de uitwisselingtechnieken van de Patient Summary voor Nederland (NL-PS). De functionele scope en rolverdeling staan in het [functionele ontwerp][fo]. Aansluitvoorwaarden voor identificatie, autorisatie en adressering volgen uit de gebruikte infrastructuur.
 
 ### Relatie met EPS en IPS
 
@@ -10,15 +10,15 @@ De NL-PS is een Nederlandse invulling van de [European Patient Summary (EPS)][ep
 
 #### NL-PS raadplegen en beschikbaarstellen
 
-##### FHIR-operatie: $summary
+##### FHIR-operaties
 
-De NL-PS wordt via de FHIR-operation $summary opgevraagd, zie de [IPS-operatiedefinitie][summary]. De operatie ondersteunt GET en POST; de voorbeelden gebruiken GET.
+Door de link met de IPS kan de NL-PS via de FHIR-operaties [\$summary][summary] of [\$docref][docref] opgevraagd, zie de [IPS Data Generation and Inclusion][inclusion] pagina. De operatie ondersteunt GET en POST; de voorbeelden gebruiken GET.
 
-De client specificeert het NL-PS-Composition-profiel met de parameter `profile`. Deze parameter is binnen NL-PS verplicht, hoewel de IPS-operatiedefinitie deze optioneel maakt. De server moet dit profiel ondersteunen.
+Voor summary specificeert de client het NL-PS-Composition-profiel met de parameter `profile`. Deze parameter is binnen NL-PS verplicht, hoewel de IPS-operatiedefinitie deze optioneel maakt. De server moet dit profiel ondersteunen.
 
 Bij een succesvolle aanroep retourneert de server een [FHIR-document][fhirdoc]: een `Bundle` met `type = document`, met als eerste resource een `Composition` die aan het aangevraagde profiel voldoet.
 
-##### Query
+##### Voorbeeldquery met $summary
 
 ```http
 GET [base]/Patient/[id]/$summary?profile=http://ig.nictiz.nl/nlps/StructureDefinition/nl-PatientSummary
@@ -33,4 +33,6 @@ In de query is expliciet geen methode van patiëntselectie gekozen. Hiervoor ver
 [complies]: https://build.fhir.org/ig/HL7/fhir-extensions/en/StructureDefinition-structuredefinition-compliesWithProfile.html
 [fhirdoc]: https://hl7.org/fhir/R4/documents.html
 [summary]: https://build.fhir.org/ig/HL7/fhir-ips/en/OperationDefinition-summary.html
+[docref]: http://hl7.org/fhir/uv/ipa/OperationDefinition-docref.html
+[inclusion]: https://build.fhir.org/ig/HL7/fhir-ips/en/Generation-and-Data-Inclusion.html
 [GFauth]: https://minvws.github.io/generiekefuncties-docs/en/authentication.html
